@@ -99,8 +99,11 @@ The second approch is to have a service that activated the backup script, every 
 ```bash
 sudo tee /usr/local/bin/backup_rsync.sh > /dev/null <<EOF
 #!/bin/bash
+echo none >/sys/class/leds/blue\:heartbeat/trigger
+echo 255 > /sys/class/leds/blue\:heartbeat/brightness 
 rsync -av  /mnt/nfs_share/ /mnt/backup/
 umount /mnt/backup
+echo heartbeat > /sys/class/leds/blue\:heartbeat/trigger 
 EOF
 
 sudo chmod +x /usr/local/bin/backup_rsync.sh
