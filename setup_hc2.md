@@ -1,13 +1,19 @@
 # update system
+```bash
 apt-get update
 apt-get upgrade
+```
 
 # enable ssh connection, disable password connection
+```bash
 wget https://github.com/maddinpsy.keys -O- >> ~/.ssh/authorized_keys
 sed -i 's/^#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 systemctl restart ssh
+```
 
+# Mount main HDD
+```bash
 # Step 1: Identify the HDD (Modify this if needed)
 DEVICE="/dev/sda1"  # Change this if your HDD is on a different device
 MOUNT_POINT="/mnt/nfs_share"
@@ -53,17 +59,18 @@ echo "Applying mount changes..."
 sudo mount -a
 
 echo "HDD setup complete! Mounted at $MOUNT_POINT and set to auto-mount on boot."
-
+```
 
 # install nfs server
+```bash
 apt install -y nfs-kernel-server
 chmod 777 /mnt/nfs_share
 echo "/mnt/nfs_share 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)" >> /etc/exports
 exportfs -ra
 systemctl restart nfs-kernel-server
-
+```
 mount with
-sudo mount -o rw 192.168.0.238:/mnt/nfs_share /mnt/nfs_client
+`sudo mount -o rw 192.168.0.238:/mnt/nfs_share /mnt/nfs_client`
 
 # spin down hdd
 ```bash
