@@ -99,7 +99,7 @@ The second approch is to have a service that activated the backup script, every 
 ```bash
 sudo tee /usr/local/bin/backup_rsync.sh > /dev/null <<EOF
 #!/bin/bash
-rsync -av  /mnt/nfs_share /mnt/backup
+rsync -av  /mnt/nfs_share/ /mnt/backup/
 umount /mnt/backup
 EOF
 
@@ -142,8 +142,6 @@ EOF
 sudo systemctl start auto-usb-backup.service
 sudo systemctl enable auto-usb-backup.service
 ```
-Test with 
-`dmesg | grep -i usb`
 
 
 # install node exporter
