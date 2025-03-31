@@ -13,8 +13,9 @@ wget https://factory.talos.dev/image/ee21ef4a5ef808a9b7484cc0dda0f25075021691c8c
 xz -d metal-arm64.raw.xz
 sudo dd if=metal-arm64.raw of=/dev/sdb conv=fsync bs=4M
 
-# bootstrap the cluster
-talosctl apply-config --insecure --mode=interactive --nodes 192.168.0.63
+# bootstrap a single node cluster
+talosctl gen config --output-types controlplane --config-patch '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' homelab https://192.168.0.63
+talosctl apply-config --insecure --nodes 192.168.0.63 --file controlplane.yaml
 talosctl kubeconfig
 ```
 
