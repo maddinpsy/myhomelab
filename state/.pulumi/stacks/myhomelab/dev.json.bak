@@ -4,7 +4,7 @@
         "stack": "organization/myhomelab/dev",
         "latest": {
             "manifest": {
-                "time": "2025-09-04T19:11:25.398953419Z",
+                "time": "2025-09-04T20:08:14.133003462Z",
                 "magic": "3981f2dd175998977d95bf9dcc9d98251f8dad42ad4e692cb72e9d3f49b59729",
                 "version": "v3.192.0"
             },
@@ -24,6 +24,34 @@
                     "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.192.0_typescript@5.9.2/node_modules/@pulumi/runtime/stack.ts#57,9"
                 },
                 {
+                    "urn": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::local",
+                    "custom": true,
+                    "id": "1e8c2860-3cba-497a-8f2f-d59535ee5127",
+                    "type": "pulumi:providers:kubernetes",
+                    "inputs": {
+                        "__internal": {},
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:9EXwOdpxc75Neutb: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"
+                        },
+                        "version": "4.23.0"
+                    },
+                    "outputs": {
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:HwCrbXqb0sdSMRfy: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"
+                        },
+                        "version": "4.23.0"
+                    },
+                    "parent": "urn:pulumi:dev::myhomelab::pulumi:pulumi:Stack::myhomelab-dev",
+                    "propertyDependencies": {
+                        "kubeconfig": []
+                    },
+                    "created": "2025-09-04T19:09:00.195252289Z",
+                    "modified": "2025-09-04T19:09:00.195252289Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.192.0_typescript@5.9.2/node_modules/@pulumi/resource.ts#1346,9"
+                },
+                {
                     "urn": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::default_4_23_0",
                     "custom": true,
                     "id": "675b0d2f-dca1-45c6-89ae-802b5003caef",
@@ -39,32 +67,270 @@
                     "modified": "2025-09-04T19:09:00.267162142Z"
                 },
                 {
-                    "urn": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::local",
+                    "urn": "urn:pulumi:dev::myhomelab::kubernetes:apps/v1:Deployment::rick-deployment",
                     "custom": true,
-                    "id": "1e8c2860-3cba-497a-8f2f-d59535ee5127",
-                    "type": "pulumi:providers:kubernetes",
+                    "id": "default/rick-deployment-d4dfc1ae",
+                    "type": "kubernetes:apps/v1:Deployment",
                     "inputs": {
-                        "__internal": {},
-                        "kubeconfig": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:c2YFxTm9lgOPlJxu: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"
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "annotations": {
+                                "pulumi.com/autonamed": "true"
+                            },
+                            "name": "rick-deployment-d4dfc1ae",
+                            "namespace": "default"
                         },
-                        "version": "4.23.0"
+                        "spec": {
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "rick"
+                                }
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "image": "basstapper/rick-morty-api",
+                                            "name": "rick",
+                                            "ports": [
+                                                {
+                                                    "containerPort": 5000
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
                     },
                     "outputs": {
-                        "kubeconfig": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:CDsqk48uc3e9zuaw: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"
+                        "__fieldManager": "pulumi-kubernetes-2419be62",
+                        "__initialApiVersion": "apps/v1",
+                        "__inputs": {
+                            "apiVersion": "apps/v1",
+                            "kind": "Deployment",
+                            "metadata": {
+                                "annotations": {
+                                    "pulumi.com/autonamed": "true"
+                                },
+                                "name": "rick-deployment-d4dfc1ae",
+                                "namespace": "default"
+                            },
+                            "spec": {
+                                "selector": {
+                                    "matchLabels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "template": {
+                                    "metadata": {
+                                        "labels": {
+                                            "app": "rick"
+                                        }
+                                    },
+                                    "spec": {
+                                        "containers": [
+                                            {
+                                                "image": "basstapper/rick-morty-api",
+                                                "name": "rick",
+                                                "ports": [
+                                                    {
+                                                        "containerPort": 5000
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
                         },
-                        "version": "4.23.0"
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "annotations": {
+                                "deployment.kubernetes.io/revision": "1",
+                                "pulumi.com/autonamed": "true"
+                            },
+                            "creationTimestamp": "2025-09-04T19:45:38Z",
+                            "generation": 1,
+                            "managedFields": [
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:pulumi.com/autonamed": {}
+                                            }
+                                        },
+                                        "f:spec": {
+                                            "f:selector": {},
+                                            "f:template": {
+                                                "f:metadata": {
+                                                    "f:labels": {
+                                                        "f:app": {}
+                                                    }
+                                                },
+                                                "f:spec": {
+                                                    "f:containers": {
+                                                        "k:{\"name\":\"rick\"}": {
+                                                            ".": {},
+                                                            "f:image": {},
+                                                            "f:name": {},
+                                                            "f:ports": {
+                                                                "k:{\"containerPort\":5000,\"protocol\":\"TCP\"}": {
+                                                                    ".": {},
+                                                                    "f:containerPort": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-2419be62",
+                                    "operation": "Apply",
+                                    "time": "2025-09-04T19:45:38Z"
+                                },
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:deployment.kubernetes.io/revision": {}
+                                            }
+                                        },
+                                        "f:status": {
+                                            "f:availableReplicas": {},
+                                            "f:conditions": {
+                                                ".": {},
+                                                "k:{\"type\":\"Available\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                },
+                                                "k:{\"type\":\"Progressing\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                }
+                                            },
+                                            "f:observedGeneration": {},
+                                            "f:readyReplicas": {},
+                                            "f:replicas": {},
+                                            "f:updatedReplicas": {}
+                                        }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2025-09-04T19:45:41Z"
+                                }
+                            ],
+                            "name": "rick-deployment-d4dfc1ae",
+                            "namespace": "default",
+                            "resourceVersion": "40263",
+                            "uid": "0e3e8aa0-c89a-4007-bcb2-048cc6d70b4b"
+                        },
+                        "spec": {
+                            "progressDeadlineSeconds": 600,
+                            "replicas": 1,
+                            "revisionHistoryLimit": 10,
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "rick"
+                                }
+                            },
+                            "strategy": {
+                                "rollingUpdate": {
+                                    "maxSurge": "25%",
+                                    "maxUnavailable": "25%"
+                                },
+                                "type": "RollingUpdate"
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "image": "basstapper/rick-morty-api",
+                                            "imagePullPolicy": "Always",
+                                            "name": "rick",
+                                            "ports": [
+                                                {
+                                                    "containerPort": 5000,
+                                                    "protocol": "TCP"
+                                                }
+                                            ],
+                                            "resources": {},
+                                            "terminationMessagePath": "/dev/termination-log",
+                                            "terminationMessagePolicy": "File"
+                                        }
+                                    ],
+                                    "dnsPolicy": "ClusterFirst",
+                                    "restartPolicy": "Always",
+                                    "schedulerName": "default-scheduler",
+                                    "securityContext": {},
+                                    "terminationGracePeriodSeconds": 30
+                                }
+                            }
+                        },
+                        "status": {
+                            "availableReplicas": 1,
+                            "conditions": [
+                                {
+                                    "lastTransitionTime": "2025-09-04T19:45:41Z",
+                                    "lastUpdateTime": "2025-09-04T19:45:41Z",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                                },
+                                {
+                                    "lastTransitionTime": "2025-09-04T19:45:38Z",
+                                    "lastUpdateTime": "2025-09-04T19:45:41Z",
+                                    "message": "ReplicaSet \"rick-deployment-d4dfc1ae-b9446d8cd\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                                }
+                            ],
+                            "observedGeneration": 1,
+                            "readyReplicas": 1,
+                            "replicas": 1,
+                            "updatedReplicas": 1
+                        }
                     },
                     "parent": "urn:pulumi:dev::myhomelab::pulumi:pulumi:Stack::myhomelab-dev",
+                    "provider": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::local::1e8c2860-3cba-497a-8f2f-d59535ee5127",
                     "propertyDependencies": {
-                        "kubeconfig": []
+                        "apiVersion": [],
+                        "kind": [],
+                        "spec": []
                     },
-                    "created": "2025-09-04T19:09:00.195252289Z",
-                    "modified": "2025-09-04T19:09:00.195252289Z",
-                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.192.0_typescript@5.9.2/node_modules/@pulumi/resource.ts#1346,9"
+                    "created": "2025-09-04T19:48:05.482391364Z",
+                    "modified": "2025-09-04T19:48:05.482391364Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/apps/v1/deployment.ts#188,9"
                 },
                 {
                     "urn": "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace",
@@ -120,6 +386,89 @@
                     "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/namespace.ts#85,9"
                 },
                 {
+                    "urn": "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Secret::operator-oauth-pulumi-name",
+                    "custom": true,
+                    "id": "tailscale/operator-oauth",
+                    "type": "kubernetes:core/v1:Secret",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "data": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:lsa1FNSTgDstLj1x:Ybm5XFqeYLWeYW8iB1dZKq6fGemoFSdUyJ9nlbngWIs9oPfubdBHSmD1NJSRr+5Gk62oP2X8t+ep5xDCMsfdxF0X8+ExlsZW+mjRmQqaaOIud5icjwxp62mfkIxqKmJK1B2iC1y1CC6zFPnOA4EvhdAYNj1vJlKN0XPHNeTGfX/cYFP2zFt318+zue32S1L1u57Cf/HyUdEhpoIObzSM/URWXw=="
+                        },
+                        "kind": "Secret",
+                        "metadata": {
+                            "name": "operator-oauth",
+                            "namespace": "tailscale"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-aac53f8d",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "data": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:1EuwgQ2y1mzhlzob:N/bFW/o6bLmXvva3YJXl0SZ7T2EXqnbWNgTK4ub/152v/fQrCeVYMCsImNzE5bJV9Nq1cXovjxQXYhQkAkxyTvA9+ORjCcwyXWKJpYYNsBiJPRMHY8aECfn6yxDx6ebr7Swplj8m4jbprT5ND5OAe88I9MCa9n95ZDhDRz+ceMGWEKGCybChaSXv3WLTuNXHSP7QjH1Cyu7v172RdQL3gxiWEw=="
+                            },
+                            "kind": "Secret",
+                            "metadata": {
+                                "name": "operator-oauth",
+                                "namespace": "tailscale"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "data": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:RrZxLHF1JY8tGFx6:GlejbSSEyNb3NrZ1Asn50SoTw0OvQrXmG7/R7dnuhuMNI4ahQ2IyMvdjlRX13mf8jz4vzYAQbT73ytoevxSRI8IyCEUivcjJI4Zes+BKIvUDrCmjQVTz1w/aM2gpzhXUbi+aTEMHSw0b1dr7SwuMcJUWG2FiCRPVYKKHHGbkdDVfIgWRlNUtyYmqLmJ+aj/rZWBopA1NBXtUfJsmRZMBm5OkxA=="
+                        },
+                        "kind": "Secret",
+                        "metadata": {
+                            "creationTimestamp": "2025-09-04T19:09:01Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:data": {
+                                            "f:client_id": {},
+                                            "f:client_secret": {}
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-aac53f8d",
+                                    "operation": "Apply",
+                                    "time": "2025-09-04T19:09:01Z"
+                                }
+                            ],
+                            "name": "operator-oauth",
+                            "namespace": "tailscale",
+                            "resourceVersion": "37104",
+                            "uid": "6fb10b76-ceb7-40f4-a99b-54deb78cc441"
+                        },
+                        "type": "Opaque"
+                    },
+                    "parent": "urn:pulumi:dev::myhomelab::pulumi:pulumi:Stack::myhomelab-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                    ],
+                    "provider": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::default_4_23_0::675b0d2f-dca1-45c6-89ae-802b5003caef",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [
+                            "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                        ],
+                        "stringData": []
+                    },
+                    "additionalSecretOutputs": [
+                        "data",
+                        "stringData"
+                    ],
+                    "created": "2025-09-04T19:11:25.398272195Z",
+                    "modified": "2025-09-04T19:11:25.398272195Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/secret.ts#109,9"
+                },
+                {
                     "urn": "urn:pulumi:dev::myhomelab::kubernetes:helm.sh/v3:Release::tailscale-operator",
                     "custom": true,
                     "id": "tailscale/tailscale-operator-38e899d5",
@@ -166,7 +515,7 @@
                     "outputs": {
                         "__inputs": {
                             "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:/tvJfHbghaodLL2T:5bSbHpdXK9qoASBO2JDHdbFq3mvsfcmLUK618qEt5WPzA8WGSvNQlS+U/zb4YWLHS+vUJ1DDOCePzue+ZcxVaIUEIT4L0ThZFjUp4gJ9aXPHINNVwggPg3QcUWhp8XJPX819GQYMImX8JsPUYLGx/l2+dLTkLY9HGQ+tPf9vVh598BkqWR5OXEccM+NRZW3qpVlw0EG2V8HlKf+BkO74Q44AkliJ4M/N1w6eFWIe1gKxRGj3vlQk1e8JKi2EDCchQhwXsJpK7rw95gEAaptxx7D89JWrcawuyJ86C/xEOGI4D3hIfZlzklQYyUtsEi52vlf4do+4EaCi/UXYRitCu3MrFMKZtuQpSMWdipEI7G0raPD5ftwR7CFO6WyiwPJ37tLyQkbYDid6hiUn/IMmYmdigonYanGlSqanypXfBCMlbev3cmFvPkYDQf7nnE3HkmkeW+oDD3g1+vYbPhqgDrxuKuRhyPxq3EcKC4cPVDQFAVmk0NCrbFYkmMdzF7uqi0TJtestIWNjqXk4QZ1dKF5bF4eB8/tb4tnIzB0YDllJEFarcyEAm3cu7SveYu2o9iDH4f2rUXf/tKtUm3VU1hCPf57KGjUsfV3TZbYYPDIb4lH2NZv1Naq01Km/XBmcWRdTPsLH/3mK5rslOPtUWGqZ80DNMcxDStdG6Ue2ZlzHBEzv8/gVMgNh4a5IQtZfreelu6tRQWjRkzWwggsEOBF5usVFlBUWmkgRrKX5MVMYrsF7O5qPvcR/DdGVqV7EOn9tIr6sATEsCM2vLBHkmJxk9bms3hh7uCQyjzxsXthoHCaQ/sfkwtqNtqSWUDkYyA0j4bUf0P/BFXWEHkIJRKzr7BobP71bg6s6jtk+ocYv4eqb8Z+Qe8pE6sM6jcHw86GbMW0Ma3YxR1Z2Ad0B/i73iKPe7DBWUz08Yhi3dKmpRWXu7lfXElw03lI72iIdmNPj35gcIqj+KhygIbyzecNATys1gEr+"
+                            "ciphertext": "v1:D9OIpkp2r/H6MJ2t:wZ8xuHrLwxDqX6a1i7MezQugx21ToSm3Hpp66xuzONlfiYbBMDf9nBSaZhY3ht+OvwozUT3p/9JyFcz8Akcakw0l8YPcszWRhnIg1kTQprIJI7Y4GDG8yswr+r5Nm5s7zTvemgbZZXQtR7lvxdgCtF/qZcVBNgZzJ4MMd2g+ntYNl5ocs0DNWNQeLfGEMMzYgNHGCVjQHWDonOz0/HIYjYvwhdY1K40ly5SwXvMbauiRcTMuR0YzLscXeLRqFwVwL0fcEGKqWSFOotr0AbH0tmtzF04xd/FqUJ/To0oT9YjXdWcEy281T7Ya1DOc3zPLezI3i/OzQeGPNwu7FKtX2sYOWxhQMY2eaitRbBp0Vs9+FoNVW1n1UZC028JwjJKlN9DxHzTY7HLPA/Iq2j8k9om/VouSmVwsHEHEdyriNRJvJAtpSfRgzzBFhP5frRS1W3kr35x+T9IOX3bh5udxrSaDsUQociCTgB4uStLZ1HL9MROEHDS2EtxPUofjKyVaTP0T4D8szTTmrsIKQna3Dasg8lOh7dwuiJdiZsyB4XRCdYqlagEMGh8nXYvVKnEEpYmjqwo02EaMF4EGSuw+ls4FevCQ/RgNBEC+5NTCl+jrrMuBAOEMQUlGBHAQh4q5+FF0fE4mmr6mexU68E66TPBBrlCLoCqzFI6oHzGz/MLIBL2ZySDgKpkDzDp5snji7f71qodlaAs7ZLSx5K14+8u6bsGuxldV6tSqhKvsO/V/H8tfm3BxLT5OGROMPhWJw5LmfeyQao9VAa1Pn7i1GOniVAhYGoDnsn2p+iJj4uqNwQWiEmUo71G//+cAizWQpGY+ml/iza+XGHA3Zess3ney4T0M3aESQskkfd5jSqy25g/eEvjrJ4pCs4xYyZ9G1dhIzdWD6qxpcMH40oyOHn6T3q86zbx/ndLcWSYozDiL7SqoSvfgqORBG53BiW1rky1u858yiuUjsegkqf9FFVjMOebgLW1P"
                         },
                         "allowNullValues": false,
                         "atomic": false,
@@ -267,87 +616,186 @@
                     "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/helm/v3/release.ts#419,9"
                 },
                 {
-                    "urn": "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Secret::operator-oauth-pulumi-name",
+                    "urn": "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Service::rick-service",
                     "custom": true,
-                    "id": "tailscale/operator-oauth",
-                    "type": "kubernetes:core/v1:Secret",
+                    "id": "default/rick-service",
+                    "type": "kubernetes:core/v1:Service",
                     "inputs": {
                         "apiVersion": "v1",
-                        "data": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:sBPmeqOe0wT3Hjit:UGWAmTDXeMOMyTPIuG61jQsEqm4DEnX9XN2TvTJtVy/VDp6VjkQyCNUm44X3zXU3Nq4LHDlHrALam2N6J4Ziy5COoH+NLMwzjVhwpgFNgaxSY+dX+8EJz14qqxz+oOvv1Lw6CE5fHdUYsfUBvUAWVLA35sGqyho/iW5jYnoYEzd3cPJJHHdgelI7WtBbZ2aJ3/9aE8kpwjDrfK/4r+Fu3N7/rg=="
-                        },
-                        "kind": "Secret",
+                        "kind": "Service",
                         "metadata": {
-                            "name": "operator-oauth",
-                            "namespace": "tailscale"
+                            "annotations": {
+                                "tailscale.com/expose": "true"
+                            },
+                            "name": "rick-service",
+                            "namespace": "default"
+                        },
+                        "spec": {
+                            "ports": [
+                                {
+                                    "port": 80,
+                                    "targetPort": 5000
+                                }
+                            ],
+                            "selector": {
+                                "app": "rick"
+                            },
+                            "type": "ClusterIP"
                         }
                     },
                     "outputs": {
-                        "__fieldManager": "pulumi-kubernetes-aac53f8d",
+                        "__fieldManager": "pulumi-kubernetes-2304083e",
                         "__initialApiVersion": "v1",
                         "__inputs": {
                             "apiVersion": "v1",
-                            "data": {
-                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                                "ciphertext": "v1:12SooubJ1YKzPcm3:elhVguiQJaOPEQaar2/wJEiy0narJHrudiTeyVVMXbkvZAASOEfv4cispk06sIlb1lOJMHBKBh+V0UrU5du6cw3q7dMPauX/+d+YwEaTSM39+px0jvnr5xbKPAr3lyPqyOnbMNFBcCSnZp2QEmqtdEQC3RuZXFFdzzE/6IDGsFWetwPPcRssuaNZHlot5RIKiL4SPCAdtK546Wex/yrMMB8j9w=="
-                            },
-                            "kind": "Secret",
+                            "kind": "Service",
                             "metadata": {
-                                "name": "operator-oauth",
-                                "namespace": "tailscale"
+                                "annotations": {
+                                    "tailscale.com/expose": "true"
+                                },
+                                "name": "rick-service",
+                                "namespace": "default"
+                            },
+                            "spec": {
+                                "ports": [
+                                    {
+                                        "port": 80,
+                                        "targetPort": 5000
+                                    }
+                                ],
+                                "selector": {
+                                    "app": "rick"
+                                },
+                                "type": "ClusterIP"
                             }
                         },
                         "apiVersion": "v1",
-                        "data": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:OHJO9es/ndr+KGij:hN9mx2rQo9WcIo0Wg05qnN6Sp9dDTN58gHF8ynVrcKvT5VfgrUUhkyKRnDDjWY6J8CEN7MmkmSV07qNTYIBXMHMcEU4XfajoyuNPAhkXQZkmh1j9IYxbkhjLmfjupwNHG85p1C3SIlWsejSKeLGE+oqUmIB23gp99MNtbptmnxOE6ITc6n5BKPm/4MeSuE6amyvyfL6VuKBShjv0yfLVkbBj6Q=="
-                        },
-                        "kind": "Secret",
+                        "kind": "Service",
                         "metadata": {
-                            "creationTimestamp": "2025-09-04T19:09:01Z",
+                            "annotations": {
+                                "tailscale.com/expose": "true"
+                            },
+                            "creationTimestamp": "2025-09-04T20:05:37Z",
+                            "finalizers": [
+                                "tailscale.com/finalizer"
+                            ],
                             "managedFields": [
                                 {
                                     "apiVersion": "v1",
                                     "fieldsType": "FieldsV1",
                                     "fieldsV1": {
-                                        "f:data": {
-                                            "f:client_id": {},
-                                            "f:client_secret": {}
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:tailscale.com/expose": {}
+                                            }
+                                        },
+                                        "f:spec": {
+                                            "f:ports": {
+                                                "k:{\"port\":80,\"protocol\":\"TCP\"}": {
+                                                    ".": {},
+                                                    "f:port": {},
+                                                    "f:targetPort": {}
+                                                }
+                                            },
+                                            "f:selector": {},
+                                            "f:type": {}
                                         }
                                     },
-                                    "manager": "pulumi-kubernetes-aac53f8d",
+                                    "manager": "pulumi-kubernetes-2304083e",
                                     "operation": "Apply",
-                                    "time": "2025-09-04T19:09:01Z"
+                                    "time": "2025-09-04T20:05:37Z"
+                                },
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:finalizers": {
+                                                ".": {},
+                                                "v:\"tailscale.com/finalizer\"": {}
+                                            }
+                                        }
+                                    },
+                                    "manager": "operator",
+                                    "operation": "Update",
+                                    "time": "2025-09-04T20:05:37Z"
+                                },
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:status": {
+                                            "f:conditions": {
+                                                ".": {},
+                                                "k:{\"type\":\"TailscaleProxyReady\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "manager": "operator",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2025-09-04T20:05:38Z"
                                 }
                             ],
-                            "name": "operator-oauth",
-                            "namespace": "tailscale",
-                            "resourceVersion": "37104",
-                            "uid": "6fb10b76-ceb7-40f4-a99b-54deb78cc441"
+                            "name": "rick-service",
+                            "namespace": "default",
+                            "resourceVersion": "41853",
+                            "uid": "88bef367-cccb-4b1b-a94e-473aad471803"
                         },
-                        "type": "Opaque"
+                        "spec": {
+                            "clusterIP": "10.105.221.183",
+                            "clusterIPs": [
+                                "10.105.221.183"
+                            ],
+                            "internalTrafficPolicy": "Cluster",
+                            "ipFamilies": [
+                                "IPv4"
+                            ],
+                            "ipFamilyPolicy": "SingleStack",
+                            "ports": [
+                                {
+                                    "port": 80,
+                                    "protocol": "TCP",
+                                    "targetPort": 5000
+                                }
+                            ],
+                            "selector": {
+                                "app": "rick"
+                            },
+                            "sessionAffinity": "None",
+                            "type": "ClusterIP"
+                        },
+                        "status": {
+                            "conditions": [
+                                {
+                                    "lastTransitionTime": "2025-09-04T20:05:38Z",
+                                    "message": "ProxyCreated",
+                                    "reason": "ProxyCreated",
+                                    "status": "True",
+                                    "type": "TailscaleProxyReady"
+                                }
+                            ],
+                            "loadBalancer": {}
+                        }
                     },
                     "parent": "urn:pulumi:dev::myhomelab::pulumi:pulumi:Stack::myhomelab-dev",
-                    "dependencies": [
-                        "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
-                    ],
                     "provider": "urn:pulumi:dev::myhomelab::pulumi:providers:kubernetes::default_4_23_0::675b0d2f-dca1-45c6-89ae-802b5003caef",
                     "propertyDependencies": {
                         "apiVersion": [],
                         "kind": [],
-                        "metadata": [
-                            "urn:pulumi:dev::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
-                        ],
-                        "stringData": []
+                        "metadata": [],
+                        "spec": []
                     },
-                    "additionalSecretOutputs": [
-                        "data",
-                        "stringData"
-                    ],
-                    "created": "2025-09-04T19:11:25.398272195Z",
-                    "modified": "2025-09-04T19:11:25.398272195Z",
-                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/secret.ts#109,9"
+                    "created": "2025-09-04T20:08:11.477042462Z",
+                    "modified": "2025-09-04T20:08:11.477042462Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/service.ts#143,9"
                 }
             ],
             "metadata": {}

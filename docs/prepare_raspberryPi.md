@@ -14,7 +14,11 @@ xz -d metal-arm64.raw.xz
 sudo dd if=metal-arm64.raw of=/dev/sdb conv=fsync bs=4M
 
 # bootstrap a single node cluster
-talosctl gen config --output-types controlplane,talosconfig --config-patch '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' homelab https://192.168.0.63:6443
+talosctl gen config --output-types controlplane,talosconfig homelab https://192.168.0.63:6443
+# make it single node, controlplain may sedule workload
+talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' -o controlplane.yaml
+# fix tailscale permission 
+talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/1", "value": tailscale}]' -o controlplane.yaml
 talosctl apply-config --insecure --nodes 192.168.0.63 --file controlplane.yaml
 talosctl --talosconfig=./talosconfig config endpoints 192.168.0.63
 talosctl bootstrap --nodes 192.168.0.63 --talosconfig=./talosconfig
