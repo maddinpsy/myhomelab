@@ -22,3 +22,36 @@
 - A Firewall and sophisticated networking
 - Public Accessable (also not over clodflare tunnel or tailsacel funnel)
 - host email server (I'm scared that I will can't receive/loose emails, because it it is not high avaible)
+
+## verwendete hardware
+Da es erstmal nur ein spiel prohjekt ist, will ich kein geld fur yusatzliche hardware ausgeben. 
+DAher nuzte ich was ich sowiso rumliegen habe:
+- Raspaberery Pi 4 => as k8s Single Node cluster 9woker and control plane)
+- Odroid HC2 => as nas storage solution
+
+## Network setup aka click ops
+### Router Config
+The HArdware is connected to my home network. 
+I highly rely on the correkt ip addresses, because i don't have a dns, yet. 
+The IPs of the PI and the NAS must be correktly configured in the routers ui. 
+When changing or adding a Harware compontnet i also need to change/add the IPs.
+
+### Tailscale
+The easies way to reach the services from the internet is to use a tunnel provider like cloudflared, tailscale, zerotier,...
+For now i will go with tailscale.
+I use the Tailscale k8s operator. That requires me only to click and API key in the Tailscale UI.
+
+## dev process
+Everything is Infrastructre as Code, except the network setup.
+For K8s deployment i use Pulumi with typescript.
+I want to be able to push the cahnges to the cluster, to have shorted development cycle. 
+Maybe I'll change that later to Flux or Agora to pull it from this git repo. 
+
+### Secrets
+all secretes are stored in pulumi.
+The pulumi stack with encrypted secrets is commited to git.
+
+### state
+This project has no CI and there is only one Team member. 
+So no lock system is needed.
+The state is stored in local file and commited to git.
