@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "Stack": "organization/myhomelab/dev",
+        "Latest": {
+            "manifest": {
+                "time": "2025-09-04T08:27:46.06633367Z",
+                "magic": "3981f2dd175998977d95bf9dcc9d98251f8dad42ad4e692cb72e9d3f49b59729",
+                "version": "v3.192.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:hKXjAl0NQN0=:v1:SJJi6Dmg7jr3HnLR:wVdTGgA/GtuwUeVVFUWjwXJ9vRz2kg=="
+                }
+            },
+            "metadata": {}
+        }
+    }
+}

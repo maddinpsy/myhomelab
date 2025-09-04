@@ -1,0 +1,10 @@
+name: myhomelab
+description: Setup of my k8s homelab with pulumi.
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: typescript
