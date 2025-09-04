@@ -27,3 +27,12 @@ to upgrade use
 ```
 talosctl -n <node IP or DNS name> upgrade --image=factory.talos.dev/installer/ee21ef4a5ef808a9b7484cc0dda0f25075021691c8c09a276591eedb638ea1f9:v1.11.0
 ```
+
+initially set up kubeconfig secret in pulumi
+```
+curl -fsSL https://get.pulumi.com | sh
+pulumi login file://state
+pulumi stack select dev
+export PULUMI_CONFIG_PASSPHRASE="..."
+talosctl kubeconfig --talosconfig=./talosconfig --nodes 192.168.0.63 - | pulumi config set kubeconfig --secret
+```
