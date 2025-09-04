@@ -19,6 +19,8 @@ talosctl gen config --output-types controlplane,talosconfig homelab https://192.
 talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' -o controlplane.yaml
 # fix tailscale permission 
 talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/1", "value": tailscale}]' -o controlplane.yaml
+# fix local-path-storage permission 
+talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/2", "value": local-path-storage}]' -o controlplane.yaml
 talosctl apply-config --insecure --nodes 192.168.0.63 --file controlplane.yaml
 talosctl --talosconfig=./talosconfig config endpoints 192.168.0.63
 talosctl bootstrap --nodes 192.168.0.63 --talosconfig=./talosconfig

@@ -82,3 +82,5 @@ const srv = new k8s.core.v1.Service("rick-service", {
         type: "ClusterIP"
     }
 })
+
+new k8s.yaml.ConfigFile("provi", { file: "https://raw.githubusercontent.com/rancher/local-path-provisioner/refs/tags/v0.0.32/deploy/local-path-storage.yaml" });
