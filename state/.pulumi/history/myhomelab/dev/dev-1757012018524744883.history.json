@@ -1,0 +1,45 @@
+{
+    "kind": "update",
+    "startTime": 1757011711,
+    "message": "set kubeconfig secret",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "maddinpsy",
+        "git.author.email": "maddinpsycho@gmail.com",
+        "git.committer": "maddinpsy",
+        "git.committer.email": "maddinpsycho@gmail.com",
+        "git.dirty": "true",
+        "git.head": "6f9789790a34c4d3c4e136574673af087731a3d7",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.192.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "maddinpsy",
+        "vcs.repo": "myhomelab",
+        "vcs.root": "."
+    },
+    "config": {
+        "myhomelab:kubeconfig": {
+            "secure": "v1:9U4R5ne1vBjNNZIg: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"
+        },
+        "myhomelab:tailscaleClientId": {
+            "secure": "v1:pqGEcbIzrLS9S7dk:AGDmBmRhTPWI72X7sBsEf3Wu7v/n/U5o8dUPvnlmxgFV"
+        },
+        "myhomelab:tailscaleClientSecret": {
+            "secure": "v1:kgOjFt/v4fxAIiSh:jfvAMDGwVlu7VSO6T/Y4eja/pfgbSzWy0+cwt+F6vEr4q8LH+z0rEu8ii8ZbgmBnkUBzHxYgWRLpDvtRxUkQ+6bQ2PcLQig8rGcoxXK8F7E="
+        },
+        "pulumi:tags": {
+            "pulumi:template": "typescript"
+        }
+    },
+    "version": 0,
+    "result": "failed",
+    "endTime": 1757012018,
+    "resourceChanges": {
+        "create": 2
+    }
+}
