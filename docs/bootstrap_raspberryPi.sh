@@ -8,7 +8,8 @@ fi
 # bootstrap a single node cluster
 talosctl gen config --output-types controlplane,talosconfig homelab https://$1:6443
 # use as default talosconfig
-mv ./talosconfig ~/.talos/config
+mkdir -p ~/.talos
+cp ./talosconfig ~/.talos/config
 # make it single node, controlplain may sedule workload
 talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' -o controlplane.yaml
 # fix tailscale permission 
