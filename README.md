@@ -71,4 +71,11 @@ talosctl version --nodes 192.168.0.63
 ```
 
 ### on new hardware with new tokens
-
+Burn a fresh talos image and insert it into the pi.
+Then run the bootstrap script and apply pulumi
+```
+./bootstrap_raspberryPi.sh 192.168.0.63
+pulumi config set --secret tailscaleClientId
+pulumi config set --secret tailscaleClientSecret
+pulumi up
+```

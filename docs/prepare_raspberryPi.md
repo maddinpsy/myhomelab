@@ -11,22 +11,11 @@ curl -sL https://talos.dev/install | sh
 # download sepzelized raspberry image to workstation, extract and flash
 wget https://factory.talos.dev/image/ee21ef4a5ef808a9b7484cc0dda0f25075021691c8c09a276591eedb638ea1f9/v1.11.0/metal-arm64.raw.xz
 xz -d metal-arm64.raw.xz
-sudo dd if=metal-arm64.raw of=/dev/sdb conv=fsync bs=4M
+sudo dd if=metal-arm64.raw of=/dev/sdx conv=fsync bs=4M
 
-# bootstrap a single node cluster
-talosctl gen config --output-types controlplane,talosconfig homelab https://192.168.0.63:6443
-# make it single node, controlplain may sedule workload
-talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}]' -o controlplane.yaml
-# fix tailscale permission 
-talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/1", "value": tailscale}]' -o controlplane.yaml
-# fix local-path-storage permission 
-talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/2", "value": local-path-storage}]' -o controlplane.yaml
-talosctl apply-config --insecure --nodes 192.168.0.63 --file controlplane.yaml
-talosctl --talosconfig=./talosconfig config endpoints 192.168.0.63
-talosctl bootstrap --nodes 192.168.0.63 --talosconfig=./talosconfig
-# sleep 5 # wait for the cluster to start, else you get the error certificate expired
-talosctl kubeconfig --talosconfig=./talosconfig --nodes 192.168.0.63
+./bootstrap_raspberryPi.sh 192.168.0.63
 kubectl get nodes
+talosctl version
 ```
 
 to upgrade use
