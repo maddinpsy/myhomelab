@@ -1,0 +1,10 @@
+[tools]
+# required tools
+talosctl = "latest"
+pulumi = "latest"
+node = "latest"
+pnpm = "latest"
+# optional tools
+k9s = "latest"
+kubectl = "latest"
+fx = "latest"

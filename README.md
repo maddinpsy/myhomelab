@@ -55,3 +55,20 @@ The pulumi stack with encrypted secrets is commited to git.
 This project has no CI and there is only one Team member. 
 So no lock system is needed.
 The state is stored in local file and commited to git.
+
+## How to install
+
+### on my hardware with my tokens
+```bash
+pulumi login file://state
+pulumi stack select prod
+export PULUMI_CONFIG_PASSPHRASE="..."
+pulumi config get kubeconfig > ~/.kube/config
+pulumi config get talosconfig > ~/.talos/config
+pulumi up
+kubectl get nodes
+talosctl version --nodes 192.168.0.63
+```
+
+### on new hardware with new tokens
+
