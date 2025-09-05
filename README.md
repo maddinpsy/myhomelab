@@ -74,7 +74,15 @@ talosctl version --nodes 192.168.0.63
 Burn a fresh talos image and insert it into the pi.
 Then run the bootstrap script and apply pulumi
 ```
-./bootstrap_raspberryPi.sh 192.168.0.63
+git clone https://github.com/maddinpsy/myhomelab.git
+cd myhomelab
+mise trust
+mise install
+./docs/bootstrap_raspberryPi.sh 192.168.0.63
+pulumi install
+pulumi login file://state
+pulumi stack select dev
+export PULUMI_CONFIG_PASSPHRASE="..."
 pulumi config set --secret tailscaleClientId
 pulumi config set --secret tailscaleClientSecret
 pulumi up
