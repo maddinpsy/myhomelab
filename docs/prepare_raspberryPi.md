@@ -13,7 +13,7 @@ wget https://factory.talos.dev/image/ee21ef4a5ef808a9b7484cc0dda0f25075021691c8c
 xz -d metal-arm64.raw.xz
 sudo dd if=metal-arm64.raw of=/dev/sdx conv=fsync bs=4M
 
-./bootstrap_raspberryPi.sh 192.168.0.63
+./bootstrap_raspberryPi.sh 192.168.2.37
 kubectl get nodes
 talosctl version
 ```
@@ -29,5 +29,5 @@ curl -fsSL https://get.pulumi.com | sh
 pulumi login file://state
 pulumi stack select dev
 export PULUMI_CONFIG_PASSPHRASE="..."
-talosctl kubeconfig --talosconfig=./talosconfig --nodes 192.168.0.63 - | pulumi config set kubeconfig --secret
+talosctl kubeconfig --talosconfig=./talosconfig --nodes 192.168.2.37 - | pulumi config set kubeconfig --secret
 ```

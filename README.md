@@ -67,7 +67,7 @@ pulumi config get kubeconfig > ~/.kube/config
 pulumi config get talosconfig > ~/.talos/config
 pulumi up
 kubectl get nodes
-talosctl version --nodes 192.168.0.63
+talosctl version --nodes 192.168.2.37
 ```
 
 ### on new hardware with new tokens
@@ -78,7 +78,7 @@ git clone https://github.com/maddinpsy/myhomelab.git
 cd myhomelab
 mise trust
 mise install
-./docs/bootstrap_raspberryPi.sh 192.168.0.63
+./docs/bootstrap_raspberryPi.sh 192.168.2.37
 pulumi install
 pulumi login file://state
 pulumi stack select dev
@@ -86,4 +86,6 @@ export PULUMI_CONFIG_PASSPHRASE="..."
 pulumi config set --secret tailscaleClientId
 pulumi config set --secret tailscaleClientSecret
 pulumi up
+cat ~/.kube/config | pulumi config set --secret kubeconfig
+cat  ~/.talos/config | pulumi config set --secret talosconfig
 ```
