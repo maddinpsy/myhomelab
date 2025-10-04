@@ -3,3 +3,4 @@
 controlplane.yaml
 talosconfig
 .passphrase
+*.img.xz
