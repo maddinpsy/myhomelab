@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-SDCARD="/dev/sdc"  # Change this to the correct SD card device
+SDCARD="/dev/disk4"  # Change this to the correct SD card device
 URL="https://de.eu.odroid.in/ubuntu_24.04lts/XU3_XU4_MC1_HC1_HC2"
 FILENAME="ubuntu-24.04-6.6-minimal-odroid-xu4-20240911.img.xz"
 

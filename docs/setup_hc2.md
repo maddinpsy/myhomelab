@@ -1,3 +1,9 @@
+# connect with default password
+```bash
+ssh root@odroid
+```
+password: odroid
+
 # update system
 ```bash
 apt-get update
@@ -65,7 +71,7 @@ echo "HDD setup complete! Mounted at $MOUNT_POINT and set to auto-mount on boot.
 ```bash
 apt install -y nfs-kernel-server
 chmod 777 /mnt/nfs_share
-echo "/mnt/nfs_share 192.168.0.0/24(rw,sync,no_subtree_check,no_root_squash)" >> /etc/exports
+echo "/mnt/nfs_share 192.168.0.0/16(rw,sync,no_subtree_check,no_root_squash)" >> /etc/exports
 exportfs -ra
 systemctl restart nfs-kernel-server
 ```
@@ -84,14 +90,13 @@ sudo hdparm -S 60 /dev/sda
 # setup sync job
 Mount second drive
 ```bash
-apt install rsync
+apt install restic
+# install ntfs driver if needed
 sudo apt install ntfs-3g -y
 mkdir /mnt/backup
 mount /dev/sdb1 /mnt/backup
 # init the disk from the backup
-rsync -av /mnt/backup/ /mnt/nfs_share/
-# setup cron job to sync
-echo "0 3 * * 1 root rsync -av /mnt/nfs_share/ /mnt/backup/ " | sudo tee -a /etc/crontab > /dev/null
+rustic copy /mnt/backup/ /mnt/nfs_share/
 ```
 This lets the usb disk running all the time. and i could not switch it off because of the limited usb scic driver.
 
@@ -101,7 +106,7 @@ sudo tee /usr/local/bin/backup_rsync.sh > /dev/null <<EOF
 #!/bin/bash
 echo none >/sys/class/leds/blue\:heartbeat/trigger
 echo 255 > /sys/class/leds/blue\:heartbeat/brightness 
-rsync -av  /mnt/nfs_share/ /mnt/backup/
+rustic copy
 umount /mnt/backup
 echo heartbeat > /sys/class/leds/blue\:heartbeat/trigger 
 EOF
@@ -126,8 +131,8 @@ fi
 sudo mount -a
 ```
 
-Now add the systemd servie, that is called when the drive is mounted.
-```
+Now add the systemd service, that is called when the drive is mounted.
+```bash
 sudo tee /etc/systemd/system/auto-usb-backup.service > /dev/null <<EOF
 
 [Unit]
@@ -136,16 +141,27 @@ Requires=mnt-backup.mount
 After=mnt-backup.mount
 
 [Service]
+Type=oneshot
 ExecStart=/usr/local/bin/backup_rsync.sh 
+EnvironmentFile=/etc/restic.env
 
 [Install]
 WantedBy=mnt-backup.mount
 EOF
 
-sudo systemctl start auto-usb-backup.service
 sudo systemctl enable auto-usb-backup.service
+sudo systemctl start auto-usb-backup.service
 ```
-
+Store passwords in env file
+```bash
+sudo tee /etc/restic.env > /dev/null <<EOF
+RESTIC_FROM_PASSWORD password
+RESTIC_FROM_REPOSITORY /mnt/nfs_share/
+RESTIC_REPOSITORY /mnt/backup/
+RESTIC_PASSWORD password
+EOF
+chmod 600 /etc/restic.env
+```
 
 # install node exporter
 get me an older version 1.7 vs 1.9 but it comes with all the dependencies to access the hardware and with a service that is started by default.
