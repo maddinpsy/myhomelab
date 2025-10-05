@@ -9,7 +9,6 @@ const cfg = new pulumi.Config();
 
 const k8sProvider = new k8s.Provider("local", { kubeconfig: cfg.getSecret("kubeconfig") });
 
-setupNetwork(k8sProvider);
 
 const storageConfig: StorageConfig = {
     backupPassword: cfg.requireSecret("backupPassword"),
@@ -17,6 +16,10 @@ const storageConfig: StorageConfig = {
     nfsPath: cfg.require("nfsPath"),
 }
 setupStorage(storageConfig, k8sProvider);
-setupRick(k8sProvider);
-setupPostgres(k8sProvider);
-newDatabase("cnpg-test", k8sProvider);
+
+let network = setupNetwork(k8sProvider);
+
+setupRick(k8sProvider, network);
+
+let postgres = setupPostgres(k8sProvider);
+newDatabase("cnpg-test", k8sProvider, postgres);

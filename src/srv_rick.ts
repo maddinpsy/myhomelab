@@ -1,6 +1,7 @@
 import * as k8s from "@pulumi/kubernetes";
+import * as pulumi from "@pulumi/pulumi";
 
-function setupRick(k8sProvider?: k8s.Provider) {
+function setupRick(k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
 
     // Dummy Service
     const dpl = new k8s.apps.v1.Deployment("rick-deployment", {
@@ -30,7 +31,8 @@ function setupRick(k8sProvider?: k8s.Provider) {
             }
         }
     }, {
-        provider: k8sProvider
+        provider: k8sProvider,
+        dependsOn: dependsOn
     });
 
     const srv = new k8s.core.v1.Service("rick-service", {
@@ -51,7 +53,8 @@ function setupRick(k8sProvider?: k8s.Provider) {
             type: "ClusterIP"
         }
     }, {
-        provider: k8sProvider
+        provider: k8sProvider,
+        dependsOn: dependsOn
     });
 }
 

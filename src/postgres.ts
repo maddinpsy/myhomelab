@@ -1,7 +1,7 @@
 import * as k8s from "@pulumi/kubernetes";
+import * as pulumi from "@pulumi/pulumi";
 
 export function setupPostgres(k8sProvider?: k8s.Provider) {
-
     const cnpg = new k8s.helm.v3.Release("cnpg", {
         chart: "cloudnative-pg",
         repositoryOpts: {
@@ -11,9 +11,10 @@ export function setupPostgres(k8sProvider?: k8s.Provider) {
         createNamespace: true,
         version: "0.26.0"
     }, { provider: k8sProvider });
+    return cnpg;
 }
 
-export function newDatabase(namespace: string, k8sProvider?: k8s.Provider) {
+export function newDatabase(namespace: string, k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
     const cluster = new k8s.helm.v3.Release("cluster", {
         chart: "cluster",
         repositoryOpts: {
@@ -30,5 +31,6 @@ export function newDatabase(namespace: string, k8sProvider?: k8s.Provider) {
                 }
             },
         }
-    }, { provider: k8sProvider });
+    }, { provider: k8sProvider, dependsOn: dependsOn });
+    return cluster;
 }

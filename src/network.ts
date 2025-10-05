@@ -28,7 +28,9 @@ function setupNetwork(k8sProvider?: k8s.Provider) {
         },
         namespace: operatorNamespace.metadata.name,
         version: "1.86.2"
-    }, { provider: k8sProvider });
+    }, { provider: k8sProvider, dependsOn: operatorOauth });
+
+    return tailscaleOperator
 }
 
 export default setupNetwork;
