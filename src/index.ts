@@ -3,7 +3,7 @@ import * as k8s from "@pulumi/kubernetes";
 import setupNetwork from "./network";
 import { setupStorage, StorageConfig } from "./storage";
 import setupRick from "./srv_rick";
-import { setupPostgress, newDatabase } from "./postgress";
+import { setupPostgres, newDatabase } from "./postgres";
 
 const cfg = new pulumi.Config();
 
@@ -18,5 +18,5 @@ const storageConfig: StorageConfig = {
 }
 setupStorage(storageConfig, k8sProvider);
 setupRick(k8sProvider);
-setupPostgress(k8sProvider);
+setupPostgres(k8sProvider);
 newDatabase("cnpg-test", k8sProvider);

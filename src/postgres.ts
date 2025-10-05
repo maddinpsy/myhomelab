@@ -1,6 +1,6 @@
 import * as k8s from "@pulumi/kubernetes";
 
-export function setupPostgress(k8sProvider?: k8s.Provider) {
+export function setupPostgres(k8sProvider?: k8s.Provider) {
 
     const cnpg = new k8s.helm.v3.Release("cnpg", {
         chart: "cloudnative-pg",
