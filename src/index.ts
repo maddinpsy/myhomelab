@@ -4,6 +4,7 @@ import setupNetwork from "./network";
 import { setupStorage, StorageConfig } from "./storage";
 import setupRick from "./srv_rick";
 import { setupPostgres, newDatabase } from "./postgres";
+import { setupMinio } from "./minio";
 
 const cfg = new pulumi.Config();
 
@@ -23,3 +24,5 @@ setupRick(k8sProvider, network);
 
 let postgres = setupPostgres(k8sProvider);
 newDatabase("cnpg-test", k8sProvider, postgres);
+
+let minio = setupMinio(k8sProvider, network);
