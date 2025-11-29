@@ -2,8 +2,14 @@ import * as k8s from "@pulumi/kubernetes";
 
 export function createRegistry(k8sProvider: k8s.Provider) {
 
+    // Namespace
+    const ns = new k8s.core.v1.Namespace("registry", { metadata: {  name: "registry" } }, { provider: k8sProvider });
+
     // PersistentVolumeClaim
     const pvc = new k8s.core.v1.PersistentVolumeClaim("registry-storage", {
+        metadata: {
+            namespace: "registry",
+        },
         spec: {
             accessModes: ["ReadWriteOnce"],
             storageClassName: "local-path",
@@ -15,9 +21,11 @@ export function createRegistry(k8sProvider: k8s.Provider) {
         }
     }, { provider: k8sProvider });
 
-
     // Deployment
     const dpl = new k8s.apps.v1.Deployment("registry", {
+        metadata: {
+            namespace: ns.metadata.name,
+        },
         spec: {
             selector: {
                 matchLabels: {
@@ -26,17 +34,20 @@ export function createRegistry(k8sProvider: k8s.Provider) {
             },
             template: {
                 metadata: {
+                    namespace: ns.metadata.name,
                     labels: {
                         "app": "registry"
                     }
                 },
                 spec: {
+                    hostNetwork: true,
                     containers: [
                         {
                             name: "registry",
                             image: "registry:3",
                             ports: [
-                                { containerPort: 5000 }
+                                { containerPort: 5000, 
+                                  hostPort: 5000 }
                             ],
                             volumeMounts: [
                                 {
@@ -59,23 +70,10 @@ export function createRegistry(k8sProvider: k8s.Provider) {
         }
     }, { provider: k8sProvider });
 
-    // Service
-    const srv = new k8s.core.v1.Service("registry", {
-        spec: {
-            selector: {
-                "app": "registry"
-            },
-            ports: [
-                { port: 5000, targetPort: 5000 }
-            ],
-            type: "ClusterIP"
-        }
-    }, { provider: k8sProvider });
-
     return {
-        deployment: dpl,
+        namespace: ns,
         pvc: pvc,
-        service: srv
+        deployment: dpl,
     }
 
 

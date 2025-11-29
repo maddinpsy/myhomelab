@@ -16,6 +16,11 @@ talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/clus
 talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/1", "value": tailscale}]' -o controlplane.yaml
 # fix local-path-storage permission 
 talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/2", "value": local-path-storage}]' -o controlplane.yaml
+# fix registry permission 
+talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/cluster/apiServer/admissionControl/0/configuration/exemptions/namespaces/3", "value": registry}]' -o controlplane.yaml
+# allow insecure access to local registry
+talosctl machineconfig patch controlplane.yaml -p '[{"op": "add", "path": "/machine/registries", "value": { "mirrors": { "registry.local": { "endpoints": ["http://127.0.0.1:5000"]}}}}]' -o controlplane.yaml
+
 talosctl apply-config --insecure --nodes $1 --file controlplane.yaml
 talosctl config endpoints $1
 talosctl bootstrap --nodes $1
