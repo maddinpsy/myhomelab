@@ -1,0 +1,2592 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/myhomelab/prod",
+        "latest": {
+            "manifest": {
+                "time": "2025-10-04T22:32:38.630873+02:00",
+                "magic": "062eea212ab292d07fc16efdd6e199c590be5a1533ad8d8fb62d23b27abd0d50",
+                "version": "v3.193.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:p7yddkTKmaY=:v1:QmMBq2xcJ8SPYmAP:CSsXfpb47PWJXzDKLsO7us146JE/gQ=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-10-04T20:01:06.73702Z",
+                    "modified": "2025-10-04T20:01:06.73702Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.192.0_typescript@5.9.2/node_modules/@pulumi/runtime/stack.ts#57,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local",
+                    "custom": true,
+                    "id": "79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "type": "pulumi:providers:kubernetes",
+                    "inputs": {
+                        "__internal": {},
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:GSG7Nw0OR3K7T9wg:qtr8wMrzX46PvP1cWLVd2zqQGBF8aRKWEGPnLVUt532znzccdpyxSgRS3Wdf7vyPbG7pVVBXJAoeffAlfpdcyQAMF/K07X5Wjj2sjrwC4NJ0XrS2xfuU7fUOmW4m2UyigsTjSQW9OVul0Gmkzw3mMC73szIBiItk06calWKRKiNMXPXvbAYOmx/w3ulT/K3CHV7Y1UPa1bdrPED1OO1nBVXWY75KPel/U5lzLwHi32rlJrDGaTRBRa8M83MqmiaasvYCJLA1WtdDt+W0UG4xgp1l3CunEh76UT6aQkU2atcqcmMQJyF4f7WYWM/mOtxL+Zvu1D2IWQUZl2dHmMgwmvR1XwdEG3w6XPv+/Piukwx9H/ZHLCIwB1zBEDQdOlqcMFw9gVExraxtYyCQ3p9PhBi0t2nltmLAou6YFuW6QPwo+RXc+eRih+MOwWVR+U7l/wQRDME+NJkPNFHDQN09mX/qdp6i54Ug2IShuGqv8+PDqdXUnNY5231TsrmJ8kUw+stPjy4O28gFXP1zQUIgWJrOe82CqpOE3eyZUBRrepg6oeJnHEuepv+96MSCkiV4wV99Ji+1oGNnrbM8/99msOQFzgyCh0wrEgqOri35KnVxMNxQvSV5G1E2uKGNC0Sawmz1wBPmkPBvll1Dn2SsHdyKsfDGVJFWgLzffk6Yl8wvU8lF5MWUJAQYzF71QQIX3gCQ3R1v9PU0v0GJWrJeXB8NqmZRzTn5OCay4foXqLgua/t+Qq7Jt+a2UXADEfMV5SDE5XkuW7uOGwZbbsGdAz9gP137EbYp1kzGSzgp0/1Ms5GPDrS3NCjv7QLmLQr80pcnjFoMbNwmfhWiJTWtc6G0B4WTo1/XjVCR/o9/NwKVsGvQD0RNOdxbGKENTuc81NxOmszoDz4zajrcfwUoX4Z7P7uY7jobqCfTDx4iMFSVkEFjhng2itiKi9J/fYwtBUoV2LnRQHmPJrMXRMH5gzc9SJ0Lu0kKRUi7BO2M4La75MgqCd+k3tai0E3a2xLvXdL4GH/IjOzsS0snCPujPkEJZX9yTRgKb8TnvBsOfpzx5L1yjWudbVkO1O7TS92a8NlZj0BXVtnunEi1POp0v7mg7yMpfQ1M2I/ENosbJcdsV90Ib3rrsEE+sAkRfXsnwtmgOfGPCN4SWC8o4sN97L6XM42bOXGxwk4X8GxIU1+qMQB1VuGbxIBkLfVDFPViaO/zkgNBvgFDyySeZcixjNdq4BIk7pc7KIwnlZnaXtODYJZ7IiJHpoFJ9wLDMP14spAr+5L/E8YMACwqge6A9rGKtLVw4BMNHIdFu6i0fKUISCC2aOV4GjCSbTS/hUmiSsIzpzrA6tLcGjqsOYSxVUHjzC9iXnYuDAVYQ6Qy9uDlBlZxEfyoQTxxpNCtwgnlj9jJKuiq0IBUqDdV8vq0rHOUGbqzqXsE9JJYFccpFufCRWa4OkuSup+vHu8//D3aLq8kAFeyzkfP0vVSsd/4PsrynJcy5vdkdvKzR9SdJOafh+y9TXu6hmrJmViPo6WLQJTyOaMDcmcLXnwCQ2rDZM/iV8jWDO6NVaRQnUcoj5LJCgmmV1P4H2dSCJ2hhQi7tF6ypCDtMkd1lEmXSUALb0WFXdh+cDWMkB6tTm8ESUZ5g7XBLO1l7x6dXaRuIdl37TwxBO8XrTjy0dQ7G7cZNi4DvemTIr/flW82msUIR50ZdbvqLvti2XRMU1f1Ewu/UBAq+rC1oSstpThE2C6Xi+ckzx3Y8Tixe9NXcoa18eNXeTDiClvc7usy/NyYVhOC5aucwYC6BAOyu0ZDLM4v2ihlimuoDnTJftK2UVYx7XQBdR2Jq4BVxR7ON/+FKciyMX2KZacHyCaNioL4OiZLTK+iNhsogoxZGoQRP2kHYlUZM1II+I4DIQhXLTMCZSGv2d+o6DmxT4W59msICIwKwuyQkc/dDghzRVJ+/A8i6Pl3H3aqY/e76TVzz0hV2cPmoEDiaIO6+IZFZ6ABTSz3ls540alf3bg6yDyU5BiX6udyG8KXFsJ9k3QSUVK8ooUmYFnWTYpXAl87uwYQfQX4N1HKqdepUfuQKA3aOYn0k6DZufE3E1l+Kc76574v0Ni54OoTtkEMj4Hs0vHQ8VXsLAaNF+NUwHOhCGRMxt55FAxblA8zavXR58hct+CE6sncTDrw8I0jzzL+2WLAIvLYKI2wrgydukGgSfWd6V9OhPlZxWWHpr50bWqhQrb0o7cVw39+xya0Z/bwaNPX2G8QRLnk4yY5VEs4C33zGXek7VK3/cRgluwzfaBAI+HIY0RuZJhcxUa9ldyHMzZgPHlPJ0qaQ4SMOLyts2ZFpwsjAs+DrrC/7Ff8sHqditcl3iiktDhTnRHF6mez2WARgUTF6e8oVO0DZ5EN/YK7P4Nww75atfWmgaZFFT+SxwGIIUTEPa6TVueJ5kg+R9UJIH4FWyUrYz+MtKgoUWhrnwCrc4xYC5i6twzrikWgvg87+0QFL2V3F4NnUjhKQm8TZsHp72TvD1X0PCZnkZEDmZIGnkQerneJHiJiyVsxmwV3iUA5feBOIyg2BTmxZ1HArPJdQdVfs/oP/5pN73xwKpDjnbnbm0u7x8kcYxGmER/KQHBrYLUZyp39NZFfe0bNonx7QwlTxFQUzCyuGqafTFLKQWcSkwIwaC+vEaZahCXIl5v/N42bGyr5lqpqDbFIMHi/hFgM//5FJHWl0z9Iq4MjBwkgqWNpXPHqX6IwC/tuuqszEWqozi4lgLkc8avGUEgxDSB5DfgzovGMW6+S1/33WIlm0dmrMtnJRVFvzBuntIG8LD2TwKAuLGIEP97RCh2pI2L3kk14wgPLB73ozGq5BZt5oOmyTxzNc0LrOKj4uyQH0wEdekJ5OxVHMGGWHlmctXxdzDhCQ92/pCKU/VBb7s91V1ZBGOS3nsGF//deGJUVgoFIYghxCmozGh26Iq4tAXloEyZtO9UmBtRbTpcLuPT7jpBhp60LoXtVFknsI3s6m0jHXxdMPDN5J4wRgdcLnnqPy7vNi7De0d7u2/Gd"
+                        },
+                        "version": "4.23.0"
+                    },
+                    "outputs": {
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:0LvuacEqfFfepODs:VMZwhlGMcfGyIcKweqjD1UXwFb3hcK5w+bDzjrmCIa+ETUrZgtHHBUt4iqCfdj1dRxwDdadlXHh4ZmSX/2tTb0w1MGITzpntG9l8luf9WRHrr9OaQ+RdYYtOEqEhu4YX6eqFNannrA6ASiU/guGWqELHVLCXbprcA3pYlTM8zsfMEW3nCO43uahuxUtMlxHSw/Cx+r7BU9QedRLPmsjkUz+Hb7QRpEUJTUa2tGAioedu+qwvc9xhtx4YR+SflqU9xe+PO61U0jaxZ/OTooTw5Ete2gb2d7kYBhMo0kinQOATZ7Rex2hJQokk2uHXw2KdRK/8y2pC8cEVWDgPdVUSq+FGyC2SuvLq6lXni55QF9e+1ec+rn8CAZkbjuSAR3frsT9M9PlmZzmCzvYe5ZBNwB9BWoCmu7TuMNURTXqOo6QGYjj3SiP+GdCbeJBkVpTuXXmvm92KbzDjehthUCV/jBtFZkBqjLmmo4WWdlA+IwNg6/qvABm7UZGTb9fbKuR0StCXEDRCS3IiYeWxre5kC99MHd2WZ8LNaolUk0cped2/Hon5KOIxnRe02VuO1gEhm2ElngrmKMddwqi6WHiXrsbnUHNzhU7FHl50/nF7B78zVa2YgqpdbWEWCuh6sJ1f/kHFSlClWYJHK+DzYV57100e8c24ogOdm/YsWWIywb1jA0d2JxBxcrxBDZauuTPWoO4yhKDl6lD2MS6m7afxtHqjNHvf4ZUiG2NINUooOQsUEHBTE57PbPEqBWVqgxdioC0eC8Fo1BMwinRs+RuKWiHniIP0JuHp4/SmExPb4XqUrY9PhpnaGD5m0wD3DPX9/+btS4aeMPYXs64CSrps0ytSFAtKowk0KlANEd8NejanDuhSy2xt8HMfIpVzBIaj9VDTBwvgQ6BuJSpDFk/7KjrJjKKd8tGje26ZMxX5DvV/dAp43wlIVRvSTgi+hBgqne8zgAtpmBubaO1d+kEQE1LUGARcO6g1qn2LCyhm6KfZGmj+NOI3MTdGKT4ZZrTibg85lgsuACd/p0H2Lr8hp9R+ruM+A5+fvKmGELZBRTI0lUn+OnsT1UwTC9Y75LkhBmtkWtCJW4XZHEWOWrkrKzoqOR8Qp9rdY5uKIdZ0ayb88pppJh7meXTQJHPdvKWBqRyIWaRKG4+SHTjPME53t0oNCstTUjdf7hUhNSAKmc/g28wQYzEZbh61Ab2XOe8vp1soXuphGuzKJt+G3iSA4GI3jn8CMfk4zpfj9kMpHpl59kdohdQjuCh8YYF4mbCO0WIqtBDPcRlMhDKVXQMiwwrBk/9nYCE6S5cP4F3d5PqwJBi460wVQ247bmi8CnJUsFUQcQ5m5WzI+QiCLbmnduZYrJg9fJoyMZkp/3UFZ5NzfgjkBIyI+FdMMxTdlsC6CUVnQ7jNQRu3/7DpHxTWZKKaq/UaUbzHJsmJJcrxrdaLp+VmYWjNcES61bUBqAdZMwnD8BujU/l/vzDj9riYX7JiGbxEgftYyT0ROdGXgKmakNBZ6Ijeoi7mCJu0dUxYt08+JKiyqMOSCsOlw//kKQxDp2XyIjCFhBEL/N0mnDh+Z9+rU8z1WJr6GMcGuDMq4P/+TPvzy6hr+TmzYa6+2NVScQTG/ng5OhTPBbdtvV7VoPXGKjc3kj+1B/Ycg4QvHmTb2uj6Luzi715BvLUEg+SoYn8OQKiJhrsD+zwWwFsFdBMTbyVD3z1iM1xHA26uWDQ+Q4DnjmANNx1Zsur3rDLEL2I/3r7O1ASeZW7b93qAmAv0jyAspkdRS2+cTfjSOSylGGX678c3/8rmmH+Udw6DZPDqiFfVHmZgwincOzivXXVSqKj0s0IGIJJN4MjOHLkHqYhwmbU2nIWCSMDswYErqGNK5Bpj2/kFJBCeHyI4LRr8b/lbu+XA0J+PGGe/AARXxTRZ5lwJLfLBEbr65omOadsNwl4QZde+ZjWsNPQASxyeyO9mqP7bnibSbg2Di4CtEVtctnSG/FN/sCbtIhcIuRFZerzff5DOh8f5vulNVc3ST9VcW1I9n5hGfBiVkGHF9a0i7ZMwzdVi4Chl0/cxOB4yPnfYpDXA4SWDsC5K9goIyt9WULT87moi4eA21ARcVKCsIDMpTRWQLzF9LWgok15smnhxCB7Af8hfmhen5I8XqOZxJ9pVs26FdsQUPHeLdZaR0kdLFUm0WPLKxtmFE29vv01IaOoCvd1wPdu51rUbu9Q/6cjQKSh82gncEHP4Q5zxS5cU3BdZ+7K/FjumIEO+jwaOUwWWM5ursIGD3hsu6OOJFJS89nmDibencNIygNYSEbzzQJtamis4EpkHg7WbYMZpRvdNAEOueNP2yx/OQEql5E5yokgRCjovkTCAzvYgAoPZjQw/sbcQ4QbSNMp8aFuhvxOVYJkVJPD7CeIj4wJw2gXNPE7ByWy09pMVKMLUsIkzIGwPtI6YzCfKShj2w3wSC7kd+1v5BS6DbvhzHq2LmqHAlL6MGsgxMrjRNmKICIhgC4iGMppwJy+cEYI8qUrm0WdwKHESVX7mYXOWLvjMWMomhAmyessADis5Vv2fI/zS5GD8J7UvnVKgFtNtTQxssuN8mF1jGzwsOxC+xE4Z40WfkEb30+uvOoftADp9QV3QdoDoYSD47fD2r1MUoJIu74aAZJVaNJznUWyta/bZCbFCDXV8gja9dM+h/3XCN7KJtZ3BXkxvQhiRTAxRlO9WNriHSThRBA/TsRuaH3Fv/DvmbLMG3OVUOJm+jQgU4Ln40iEKCOdk3GGWGI+39oS9STpYi2wvOhIOnW62n8BaWXIYq7rZDos4+tl/yFQRAlu34d2LzUBfYr6r/a9OLioZJ2KODseStrHi+ssHJTCmoFIRx0kNZf9SHVmXJt7hU8NaPrTn2isyk7fIjlsgVb0+eeGIcxI2XdWUlY2QZehyYrvlJ7vUCP+yRHOI+FaBvuHLDvCyTuYRnDPysrRamsu+cS70mwe/JiMAVQCG1dzZlRQPda6b1bRY/4hyN9KCfuvmPlncJu89aiqz28LZ2mPBOv5E5QcN"
+                        },
+                        "version": "4.23.0"
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "propertyDependencies": {
+                        "kubeconfig": []
+                    },
+                    "created": "2025-10-04T20:01:07.23766Z",
+                    "modified": "2025-10-04T20:01:07.23766Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.192.0_typescript@5.9.2/node_modules/@pulumi/resource.ts#1346,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::default_4_23_0",
+                    "custom": true,
+                    "id": "c74614c5-e1bb-4697-8693-92a5ec6c69a1",
+                    "type": "pulumi:providers:kubernetes",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "4.23.0"
+                    },
+                    "outputs": {
+                        "version": "4.23.0"
+                    },
+                    "created": "2025-10-04T20:01:07.295548Z",
+                    "modified": "2025-10-04T20:01:07.295548Z"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "custom": false,
+                    "type": "kubernetes:yaml:ConfigFile",
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "created": "2025-10-04T20:01:09.266665Z",
+                    "modified": "2025-10-04T20:01:09.266665Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/yaml/yaml.ts#56,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:helm.sh/v3:Release::cnpg",
+                    "custom": true,
+                    "id": "cnpg-system/cnpg-a882d9a9",
+                    "type": "kubernetes:helm.sh/v3:Release",
+                    "inputs": {
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "cloudnative-pg",
+                        "cleanupOnFail": false,
+                        "createNamespace": true,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "cnpg-a882d9a9",
+                        "namespace": "cnpg-system",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://cloudnative-pg.github.io/charts/",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "timeout": 300,
+                        "values": {},
+                        "verify": false,
+                        "version": "0.26.0",
+                        "waitForJobs": false
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:kFIehtVs9ubuhf6j:AGI8fUXM/o+sXT/CZ0fUD2bOeuflk2D9VSNoRQ/KbWkLiZ5iGTAW6NXEin03SQE5+Qnqw/O730rY1lsC5WgPDxhMV6YQGkyhclzr98ZbOGVoU5Tz2qDnXDCGJG1JNnstkH0U4ELfCX99FfRYo9AdpPoa20FYj8lIZmbicSCmnWGbDAS55WnZpqKY6Zr7mXTrUh0RJY5C75hiK0kNRpjOukYaZmD8hD58Hzo/KHY93EBCcNCfZus3v3MQqeEy7aQSBTZ5ILy9aN4ICWoqo+eaNe+5TmrFS/4RMCAZaf8eNT70gBjLWi88pdZ13rMelFQfRguIQHQsvshjWvwSxH6hRBqiT3I48Wjf1OOLk4iM+Ys08yG8ozLgwPIu84nj1eCdEufSbr3WLvPHB5i1tOFISlPoJhO0eZ+8U4bfViIUM4DnOT2pmXS/2Lf4eCFRFVBILMFWcw6K9D+TFWgG1kbfM0O5n/KROqo1VoqTSTzRikstwW/QQobtr4zYfx6qkiSjVl73t++F93QaSIGt46zgc75ia4ur/oOUyDSFDDcPlPmDBOQt+//JiW4x7NQw5+tXH3K2i8hVkxgbS99FsNkIvTY1/krelJusagcfVGBihIgNuIvdgw9+wKAO1Fsfcn/lUNxqP3Ujcr0vf9g/VprAomvM+OYXNgPHX+HE8r7VEKI9MVU5YUXLD2TmgZ8vf262ZfIYj0HO+2QMHpVq6y1+/ocIFslm/gSBgwsTghZokfpDkyMhg8w/Q4lR92xo/A2Jdadpk380xbGHWyCc3vItxJBKlxO11tEtZAyBjFOKtuTMNU4tSpa1DjXJ5vtEEQ9gTXWjh4CFVYMOz5wTeJlL681pnc3XuN61Wn8F4XFAWOdJgZ/SGw5fOAZZSJWuQEtV1ss9CkLbleoGMy7xxLNyEoCXh4CIQLFOAYv65i5B6Gxg2WsDsL5rYASdZ19qmuxgDypvrZgs2UrXcQ=="
+                        },
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "cloudnative-pg",
+                        "cleanupOnFail": false,
+                        "createNamespace": true,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "cnpg-a882d9a9",
+                        "namespace": "cnpg-system",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://cloudnative-pg.github.io/charts/",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "resourceNames": {
+                            "ClusterRole.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "cnpg-a882d9a9-cloudnative-pg",
+                                "cnpg-a882d9a9-cloudnative-pg-edit",
+                                "cnpg-a882d9a9-cloudnative-pg-view"
+                            ],
+                            "ClusterRoleBinding.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "cnpg-a882d9a9-cloudnative-pg"
+                            ],
+                            "ConfigMap/v1": [
+                                "cnpg-system/cnpg-controller-manager-config",
+                                "cnpg-system/cnpg-default-monitoring"
+                            ],
+                            "CustomResourceDefinition.apiextensions.k8s.io/apiextensions.k8s.io/v1": [
+                                "backups.postgresql.cnpg.io",
+                                "clusterimagecatalogs.postgresql.cnpg.io",
+                                "clusters.postgresql.cnpg.io",
+                                "databases.postgresql.cnpg.io",
+                                "failoverquorums.postgresql.cnpg.io",
+                                "imagecatalogs.postgresql.cnpg.io",
+                                "poolers.postgresql.cnpg.io",
+                                "publications.postgresql.cnpg.io",
+                                "scheduledbackups.postgresql.cnpg.io",
+                                "subscriptions.postgresql.cnpg.io"
+                            ],
+                            "Deployment.apps/apps/v1": [
+                                "cnpg-system/cnpg-a882d9a9-cloudnative-pg"
+                            ],
+                            "MutatingWebhookConfiguration.admissionregistration.k8s.io/admissionregistration.k8s.io/v1": [
+                                "cnpg-mutating-webhook-configuration"
+                            ],
+                            "Service/v1": [
+                                "cnpg-system/cnpg-webhook-service"
+                            ],
+                            "ServiceAccount/v1": [
+                                "cnpg-system/cnpg-a882d9a9-cloudnative-pg"
+                            ],
+                            "ValidatingWebhookConfiguration.admissionregistration.k8s.io/admissionregistration.k8s.io/v1": [
+                                "cnpg-validating-webhook-configuration"
+                            ]
+                        },
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "status": {
+                            "appVersion": "1.27.0",
+                            "chart": "cloudnative-pg",
+                            "name": "cnpg-a882d9a9",
+                            "namespace": "cnpg-system",
+                            "revision": 1,
+                            "status": "deployed",
+                            "version": "0.26.0"
+                        },
+                        "timeout": 300,
+                        "values": {},
+                        "verify": false,
+                        "version": "0.26.0",
+                        "waitForJobs": false
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "chart": [],
+                        "compat": [],
+                        "createNamespace": [],
+                        "namespace": [],
+                        "repositoryOpts": [],
+                        "version": []
+                    },
+                    "created": "2025-10-04T20:03:57.072529Z",
+                    "modified": "2025-10-04T20:03:57.072529Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/helm/v3/release.ts#419,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:helm.sh/v3:Release::cluster",
+                    "custom": true,
+                    "id": "cnpg-test/cluster-3c5a1d53",
+                    "type": "kubernetes:helm.sh/v3:Release",
+                    "inputs": {
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "cluster",
+                        "cleanupOnFail": false,
+                        "createNamespace": true,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "cluster-3c5a1d53",
+                        "namespace": "cnpg-test",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://cloudnative-pg.github.io/charts/",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "timeout": 300,
+                        "values": {
+                            "cluster": {
+                                "instances": 1,
+                                "storage": {
+                                    "storageClass": "local-path"
+                                }
+                            }
+                        },
+                        "verify": false,
+                        "version": "0.3.1",
+                        "waitForJobs": false
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:idfA5OhTuBvWjukk:QL9WbNqJDFOXUkgdcwfclVHSr2ErVq2dkiG3ftiSu1l11RxKIbReYoDk99ws2167HK/wxDaAoqz4C9GBEjssuPAnTtSLqu18mnZ+N4NrjEZLCX6kweCGlTKhDvRo5DE1LxWExCvLZCwq781x+LXZL5CI9EsvS6FhJI3FEeMFC8WdnUPY0gHQKa4401ubJ9oDFsRpiJxmDAvIrHbyB2Eoyrvj/8IpUJvk7PZC25g+QIuRndjfsHPz+eVt3QALFsw7fSjAquZj0XmTnDew1jkvZShaDeSAjVV8mdX1WfMJKaJBSQeXBinGPuvp2IKGzAAEqvqqRKPJbMF++TxZAGQw1PR+lQx9VucYdggPSmvIITPhoEn5Zcg2ixhrciog2M6Dso+hQVoVOit1GEe2Qlh4by1g0woD0IoIkqY1pJWQoSycRiXl/pOCqVVXa9dYNZEb+8BcJ9dNzq/W6MIwgAqjkRWw9F++wyePOLZZOlExy1V9mCc+OeS4K/JPBJLglMNGkemUKElQACQiRNDoY0ZUGfWmPAIkBgIJOvNupyn1xNRBJsaGdhULrEy+LCKxJ3K3SRQ/K+Cf+Rojr09FSV1mLZhysF8QU8fA39agZCvDLoQnK6eNj6rjhuK+yxUcbkydA7FXUI0p/fveGcEs3WtfXW3vNuF/dD7K97qoSbYHWmVw29f2cMSu58mCCwjzcBB9D4hVanydF7MwPi7v6himviZ6OSUYGH1d5j9FdKPWQqNhpfBAws6PFrDF1G72HB28Ja2CSSAGtLnsSrL7TYCMS/4uFQIoN8bVL0NuYGJMVZp/sPp/a9YqzUiAFNt2CMvEwtLOVGrYUxmTZiLCPjr3gJMrwIKZjCHXjG3afzQFIyOBaUQYaa8vt0GhVWM4o+Dyap0WqilnIaFE9N3IzxbiRULbvQYAUqVbvvhuz+V0c4+hsXfP0Ymp+xAcipjwONXaMXw7bLrZ04IJcdkbHdH1+IGZyEIFGUDaz8jh7jFz54HYWxAlkztyOy27LkLaVShlYTWpf72VxhlPbgIgOkiMd1lAcqo="
+                        },
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "cluster",
+                        "cleanupOnFail": false,
+                        "createNamespace": true,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "cluster-3c5a1d53",
+                        "namespace": "cnpg-test",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://cloudnative-pg.github.io/charts/",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "resourceNames": {
+                            "Cluster.postgresql.cnpg.io/postgresql.cnpg.io/v1": [
+                                "cnpg-test/cluster-3c5a1d53"
+                            ]
+                        },
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "status": {
+                            "appVersion": "",
+                            "chart": "cluster",
+                            "name": "cluster-3c5a1d53",
+                            "namespace": "cnpg-test",
+                            "revision": 1,
+                            "status": "deployed",
+                            "version": "0.3.1"
+                        },
+                        "timeout": 300,
+                        "values": {
+                            "cluster": {
+                                "instances": 1,
+                                "storage": {
+                                    "storageClass": "local-path"
+                                }
+                            }
+                        },
+                        "verify": false,
+                        "version": "0.3.1",
+                        "waitForJobs": false
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "chart": [],
+                        "compat": [],
+                        "createNamespace": [],
+                        "namespace": [],
+                        "repositoryOpts": [],
+                        "values": [],
+                        "version": []
+                    },
+                    "created": "2025-10-04T20:01:13.572579Z",
+                    "modified": "2025-10-04T20:01:13.572579Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/helm/v3/release.ts#419,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:apps/v1:Deployment::rick-deployment",
+                    "custom": true,
+                    "id": "default/rick-deployment-bbe47fc2",
+                    "type": "kubernetes:apps/v1:Deployment",
+                    "inputs": {
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "annotations": {
+                                "pulumi.com/autonamed": "true"
+                            },
+                            "name": "rick-deployment-bbe47fc2",
+                            "namespace": "default"
+                        },
+                        "spec": {
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "rick"
+                                }
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "image": "basstapper/rick-morty-api",
+                                            "name": "rick",
+                                            "ports": [
+                                                {
+                                                    "containerPort": 5000
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-b23214b5",
+                        "__initialApiVersion": "apps/v1",
+                        "__inputs": {
+                            "apiVersion": "apps/v1",
+                            "kind": "Deployment",
+                            "metadata": {
+                                "annotations": {
+                                    "pulumi.com/autonamed": "true"
+                                },
+                                "name": "rick-deployment-bbe47fc2",
+                                "namespace": "default"
+                            },
+                            "spec": {
+                                "selector": {
+                                    "matchLabels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "template": {
+                                    "metadata": {
+                                        "labels": {
+                                            "app": "rick"
+                                        }
+                                    },
+                                    "spec": {
+                                        "containers": [
+                                            {
+                                                "image": "basstapper/rick-morty-api",
+                                                "name": "rick",
+                                                "ports": [
+                                                    {
+                                                        "containerPort": 5000
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "annotations": {
+                                "deployment.kubernetes.io/revision": "1",
+                                "pulumi.com/autonamed": "true"
+                            },
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "generation": 1,
+                            "managedFields": [
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:pulumi.com/autonamed": {}
+                                            }
+                                        },
+                                        "f:spec": {
+                                            "f:selector": {},
+                                            "f:template": {
+                                                "f:metadata": {
+                                                    "f:labels": {
+                                                        "f:app": {}
+                                                    }
+                                                },
+                                                "f:spec": {
+                                                    "f:containers": {
+                                                        "k:{\"name\":\"rick\"}": {
+                                                            ".": {},
+                                                            "f:image": {},
+                                                            "f:name": {},
+                                                            "f:ports": {
+                                                                "k:{\"containerPort\":5000,\"protocol\":\"TCP\"}": {
+                                                                    ".": {},
+                                                                    "f:containerPort": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-b23214b5",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                },
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:deployment.kubernetes.io/revision": {}
+                                            }
+                                        },
+                                        "f:status": {
+                                            "f:availableReplicas": {},
+                                            "f:conditions": {
+                                                ".": {},
+                                                "k:{\"type\":\"Available\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                },
+                                                "k:{\"type\":\"Progressing\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                }
+                                            },
+                                            "f:observedGeneration": {},
+                                            "f:readyReplicas": {},
+                                            "f:replicas": {},
+                                            "f:updatedReplicas": {}
+                                        }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2025-10-04T20:01:15Z"
+                                }
+                            ],
+                            "name": "rick-deployment-bbe47fc2",
+                            "namespace": "default",
+                            "resourceVersion": "2376088",
+                            "uid": "ef817297-e6cb-4530-868e-93aa97cac9ca"
+                        },
+                        "spec": {
+                            "progressDeadlineSeconds": 600,
+                            "replicas": 1,
+                            "revisionHistoryLimit": 10,
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "rick"
+                                }
+                            },
+                            "strategy": {
+                                "rollingUpdate": {
+                                    "maxSurge": "25%",
+                                    "maxUnavailable": "25%"
+                                },
+                                "type": "RollingUpdate"
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "rick"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "image": "basstapper/rick-morty-api",
+                                            "imagePullPolicy": "Always",
+                                            "name": "rick",
+                                            "ports": [
+                                                {
+                                                    "containerPort": 5000,
+                                                    "protocol": "TCP"
+                                                }
+                                            ],
+                                            "resources": {},
+                                            "terminationMessagePath": "/dev/termination-log",
+                                            "terminationMessagePolicy": "File"
+                                        }
+                                    ],
+                                    "dnsPolicy": "ClusterFirst",
+                                    "restartPolicy": "Always",
+                                    "schedulerName": "default-scheduler",
+                                    "securityContext": {},
+                                    "terminationGracePeriodSeconds": 30
+                                }
+                            }
+                        },
+                        "status": {
+                            "availableReplicas": 1,
+                            "conditions": [
+                                {
+                                    "lastTransitionTime": "2025-10-04T20:01:15Z",
+                                    "lastUpdateTime": "2025-10-04T20:01:15Z",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                                },
+                                {
+                                    "lastTransitionTime": "2025-10-04T20:01:11Z",
+                                    "lastUpdateTime": "2025-10-04T20:01:15Z",
+                                    "message": "ReplicaSet \"rick-deployment-bbe47fc2-b9446d8cd\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                                }
+                            ],
+                            "observedGeneration": 1,
+                            "readyReplicas": 1,
+                            "replicas": 1,
+                            "updatedReplicas": 1
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "spec": []
+                    },
+                    "created": "2025-10-04T20:01:15.41995Z",
+                    "modified": "2025-10-04T20:01:15.41995Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/apps/v1/deployment.ts#188,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Service::rick-service",
+                    "custom": true,
+                    "id": "default/rick-service",
+                    "type": "kubernetes:core/v1:Service",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "kind": "Service",
+                        "metadata": {
+                            "annotations": {
+                                "tailscale.com/expose": "true"
+                            },
+                            "name": "rick-service",
+                            "namespace": "default"
+                        },
+                        "spec": {
+                            "ports": [
+                                {
+                                    "port": 80,
+                                    "targetPort": 5000
+                                }
+                            ],
+                            "selector": {
+                                "app": "rick"
+                            },
+                            "type": "ClusterIP"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-565939f0",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "kind": "Service",
+                            "metadata": {
+                                "annotations": {
+                                    "tailscale.com/expose": "true"
+                                },
+                                "name": "rick-service",
+                                "namespace": "default"
+                            },
+                            "spec": {
+                                "ports": [
+                                    {
+                                        "port": 80,
+                                        "targetPort": 5000
+                                    }
+                                ],
+                                "selector": {
+                                    "app": "rick"
+                                },
+                                "type": "ClusterIP"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "kind": "Service",
+                        "metadata": {
+                            "annotations": {
+                                "tailscale.com/expose": "true"
+                            },
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "finalizers": [
+                                "tailscale.com/finalizer"
+                            ],
+                            "managedFields": [
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                "f:tailscale.com/expose": {}
+                                            }
+                                        },
+                                        "f:spec": {
+                                            "f:ports": {
+                                                "k:{\"port\":80,\"protocol\":\"TCP\"}": {
+                                                    ".": {},
+                                                    "f:port": {},
+                                                    "f:targetPort": {}
+                                                }
+                                            },
+                                            "f:selector": {},
+                                            "f:type": {}
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-565939f0",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                },
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:finalizers": {
+                                                ".": {},
+                                                "v:\"tailscale.com/finalizer\"": {}
+                                            }
+                                        }
+                                    },
+                                    "manager": "operator",
+                                    "operation": "Update",
+                                    "time": "2025-10-04T20:02:04Z"
+                                },
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:status": {
+                                            "f:conditions": {
+                                                ".": {},
+                                                "k:{\"type\":\"TailscaleProxyReady\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "manager": "operator",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2025-10-04T20:02:04Z"
+                                }
+                            ],
+                            "name": "rick-service",
+                            "namespace": "default",
+                            "resourceVersion": "2376227",
+                            "uid": "b192f77c-7c7a-41bb-84ba-a62f83b3c84a"
+                        },
+                        "spec": {
+                            "clusterIP": "10.96.240.195",
+                            "clusterIPs": [
+                                "10.96.240.195"
+                            ],
+                            "internalTrafficPolicy": "Cluster",
+                            "ipFamilies": [
+                                "IPv4"
+                            ],
+                            "ipFamilyPolicy": "SingleStack",
+                            "ports": [
+                                {
+                                    "port": 80,
+                                    "protocol": "TCP",
+                                    "targetPort": 5000
+                                }
+                            ],
+                            "selector": {
+                                "app": "rick"
+                            },
+                            "sessionAffinity": "None",
+                            "type": "ClusterIP"
+                        },
+                        "status": {
+                            "conditions": [
+                                {
+                                    "lastTransitionTime": "2025-10-04T20:02:04Z",
+                                    "message": "ProxyCreated",
+                                    "reason": "ProxyCreated",
+                                    "status": "True",
+                                    "type": "TailscaleProxyReady"
+                                }
+                            ],
+                            "loadBalancer": {}
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "spec": []
+                    },
+                    "created": "2025-10-04T20:01:21.474156Z",
+                    "modified": "2025-10-04T20:23:50.464266Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/service.ts#143,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace",
+                    "custom": true,
+                    "id": "tailscale",
+                    "type": "kubernetes:core/v1:Namespace",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "kind": "Namespace",
+                        "metadata": {
+                            "name": "tailscale"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-683d7420",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "kind": "Namespace",
+                            "metadata": {
+                                "name": "tailscale"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "kind": "Namespace",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "labels": {
+                                "kubernetes.io/metadata.name": "tailscale"
+                            },
+                            "name": "tailscale",
+                            "resourceVersion": "2376025",
+                            "uid": "4c441ce7-e9df-4f4c-a0db-ea026b7f64d4"
+                        },
+                        "spec": {
+                            "finalizers": [
+                                "kubernetes"
+                            ]
+                        },
+                        "status": {
+                            "phase": "Active"
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::default_4_23_0::c74614c5-e1bb-4697-8693-92a5ec6c69a1",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": []
+                    },
+                    "created": "2025-10-04T20:01:11.332035Z",
+                    "modified": "2025-10-04T20:01:11.332035Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/namespace.ts#85,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:rbac.authorization.k8s.io/v1:RoleBinding::local-path-storage/local-path-provisioner-bind",
+                    "custom": true,
+                    "id": "local-path-storage/local-path-provisioner-bind",
+                    "type": "kubernetes:rbac.authorization.k8s.io/v1:RoleBinding",
+                    "inputs": {
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "RoleBinding",
+                        "metadata": {
+                            "name": "local-path-provisioner-bind",
+                            "namespace": "local-path-storage"
+                        },
+                        "roleRef": {
+                            "apiGroup": "rbac.authorization.k8s.io",
+                            "kind": "Role",
+                            "name": "local-path-provisioner-role"
+                        },
+                        "subjects": [
+                            {
+                                "kind": "ServiceAccount",
+                                "name": "local-path-provisioner-service-account",
+                                "namespace": "local-path-storage"
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-79a8974f",
+                        "__initialApiVersion": "rbac.authorization.k8s.io/v1",
+                        "__inputs": {
+                            "apiVersion": "rbac.authorization.k8s.io/v1",
+                            "kind": "RoleBinding",
+                            "metadata": {
+                                "name": "local-path-provisioner-bind",
+                                "namespace": "local-path-storage"
+                            },
+                            "roleRef": {
+                                "apiGroup": "rbac.authorization.k8s.io",
+                                "kind": "Role",
+                                "name": "local-path-provisioner-role"
+                            },
+                            "subjects": [
+                                {
+                                    "kind": "ServiceAccount",
+                                    "name": "local-path-provisioner-service-account",
+                                    "namespace": "local-path-storage"
+                                }
+                            ]
+                        },
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "RoleBinding",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "rbac.authorization.k8s.io/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:roleRef": {},
+                                        "f:subjects": {}
+                                    },
+                                    "manager": "pulumi-kubernetes-79a8974f",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path-provisioner-bind",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2376031",
+                            "uid": "563419ac-e6c8-4740-a5bd-9561c079b946"
+                        },
+                        "roleRef": {
+                            "apiGroup": "rbac.authorization.k8s.io",
+                            "kind": "Role",
+                            "name": "local-path-provisioner-role"
+                        },
+                        "subjects": [
+                            {
+                                "kind": "ServiceAccount",
+                                "name": "local-path-provisioner-service-account",
+                                "namespace": "local-path-storage"
+                            }
+                        ]
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "roleRef": [],
+                        "subjects": []
+                    },
+                    "created": "2025-10-04T20:01:11.46837Z",
+                    "modified": "2025-10-04T20:01:11.46837Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/rbac/v1/roleBinding.ts#90,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:core/v1:Namespace::local-path-storage",
+                    "custom": true,
+                    "id": "local-path-storage",
+                    "type": "kubernetes:core/v1:Namespace",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "kind": "Namespace",
+                        "metadata": {
+                            "name": "local-path-storage"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-268f10de",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "kind": "Namespace",
+                            "metadata": {
+                                "name": "local-path-storage"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "kind": "Namespace",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "labels": {
+                                "kubernetes.io/metadata.name": "local-path-storage"
+                            },
+                            "name": "local-path-storage",
+                            "resourceVersion": "2376024",
+                            "uid": "060852d0-908d-482c-be61-6d794b364878"
+                        },
+                        "spec": {
+                            "finalizers": [
+                                "kubernetes"
+                            ]
+                        },
+                        "status": {
+                            "phase": "Active"
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": []
+                    },
+                    "created": "2025-10-04T20:01:11.385705Z",
+                    "modified": "2025-10-04T20:01:11.385705Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/namespace.ts#85,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:core/v1:ConfigMap::local-path-storage/local-path-config",
+                    "custom": true,
+                    "id": "local-path-storage/local-path-config",
+                    "type": "kubernetes:core/v1:ConfigMap",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "data": {
+                            "config.json": "{\n        \"nodePathMap\":[\n        {\n                \"node\":\"DEFAULT_PATH_FOR_NON_LISTED_NODES\",\n                \"paths\":[\"/opt/local-path-provisioner\"]\n        }\n        ]\n}",
+                            "helperPod.yaml": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: helper-pod\nspec:\n  priorityClassName: system-node-critical\n  tolerations:\n    - key: node.kubernetes.io/disk-pressure\n      operator: Exists\n      effect: NoSchedule\n  containers:\n  - name: helper-pod\n    image: busybox\n    imagePullPolicy: IfNotPresent",
+                            "setup": "#!/bin/sh\nset -eu\nmkdir -m 0777 -p \"$VOL_DIR\"",
+                            "teardown": "#!/bin/sh\nset -eu\nrm -rf \"$VOL_DIR\""
+                        },
+                        "kind": "ConfigMap",
+                        "metadata": {
+                            "name": "local-path-config",
+                            "namespace": "local-path-storage"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-fd97506b",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "data": {
+                                "config.json": "{\n        \"nodePathMap\":[\n        {\n                \"node\":\"DEFAULT_PATH_FOR_NON_LISTED_NODES\",\n                \"paths\":[\"/opt/local-path-provisioner\"]\n        }\n        ]\n}",
+                                "helperPod.yaml": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: helper-pod\nspec:\n  priorityClassName: system-node-critical\n  tolerations:\n    - key: node.kubernetes.io/disk-pressure\n      operator: Exists\n      effect: NoSchedule\n  containers:\n  - name: helper-pod\n    image: busybox\n    imagePullPolicy: IfNotPresent",
+                                "setup": "#!/bin/sh\nset -eu\nmkdir -m 0777 -p \"$VOL_DIR\"",
+                                "teardown": "#!/bin/sh\nset -eu\nrm -rf \"$VOL_DIR\""
+                            },
+                            "kind": "ConfigMap",
+                            "metadata": {
+                                "name": "local-path-config",
+                                "namespace": "local-path-storage"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "data": {
+                            "config.json": "{\n        \"nodePathMap\":[\n        {\n                \"node\":\"DEFAULT_PATH_FOR_NON_LISTED_NODES\",\n                \"paths\":[\"/opt/local-path-provisioner\"]\n        }\n        ]\n}",
+                            "helperPod.yaml": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: helper-pod\nspec:\n  priorityClassName: system-node-critical\n  tolerations:\n    - key: node.kubernetes.io/disk-pressure\n      operator: Exists\n      effect: NoSchedule\n  containers:\n  - name: helper-pod\n    image: busybox\n    imagePullPolicy: IfNotPresent",
+                            "setup": "#!/bin/sh\nset -eu\nmkdir -m 0777 -p \"$VOL_DIR\"",
+                            "teardown": "#!/bin/sh\nset -eu\nrm -rf \"$VOL_DIR\""
+                        },
+                        "kind": "ConfigMap",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:data": {
+                                            "f:config.json": {},
+                                            "f:helperPod.yaml": {},
+                                            "f:setup": {},
+                                            "f:teardown": {}
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-fd97506b",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path-config",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2376030",
+                            "uid": "a0ac0a4d-f927-483f-8feb-f1b0fc3fe527"
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "data": [],
+                        "kind": [],
+                        "metadata": []
+                    },
+                    "created": "2025-10-04T20:01:11.492941Z",
+                    "modified": "2025-10-04T20:01:11.492941Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/configMap.ts#91,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:storage.k8s.io/v1:StorageClass::local-path",
+                    "custom": true,
+                    "id": "local-path",
+                    "type": "kubernetes:storage.k8s.io/v1:StorageClass",
+                    "inputs": {
+                        "apiVersion": "storage.k8s.io/v1",
+                        "kind": "StorageClass",
+                        "metadata": {
+                            "name": "local-path"
+                        },
+                        "provisioner": "rancher.io/local-path",
+                        "reclaimPolicy": "Delete",
+                        "volumeBindingMode": "WaitForFirstConsumer"
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-60ea7d85",
+                        "__initialApiVersion": "storage.k8s.io/v1",
+                        "__inputs": {
+                            "apiVersion": "storage.k8s.io/v1",
+                            "kind": "StorageClass",
+                            "metadata": {
+                                "name": "local-path"
+                            },
+                            "provisioner": "rancher.io/local-path",
+                            "reclaimPolicy": "Delete",
+                            "volumeBindingMode": "WaitForFirstConsumer"
+                        },
+                        "apiVersion": "storage.k8s.io/v1",
+                        "kind": "StorageClass",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "storage.k8s.io/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:provisioner": {},
+                                        "f:reclaimPolicy": {},
+                                        "f:volumeBindingMode": {}
+                                    },
+                                    "manager": "pulumi-kubernetes-60ea7d85",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path",
+                            "resourceVersion": "2376022",
+                            "uid": "9a46e98c-2d95-4414-a6bd-125226966589"
+                        },
+                        "provisioner": "rancher.io/local-path",
+                        "reclaimPolicy": "Delete",
+                        "volumeBindingMode": "WaitForFirstConsumer"
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "provisioner": [],
+                        "reclaimPolicy": [],
+                        "volumeBindingMode": []
+                    },
+                    "created": "2025-10-04T20:01:11.281307Z",
+                    "modified": "2025-10-04T20:01:11.281307Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/storage/v1/storageClass.ts#122,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:rbac.authorization.k8s.io/v1:Role::local-path-storage/local-path-provisioner-role",
+                    "custom": true,
+                    "id": "local-path-storage/local-path-provisioner-role",
+                    "type": "kubernetes:rbac.authorization.k8s.io/v1:Role",
+                    "inputs": {
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "Role",
+                        "metadata": {
+                            "name": "local-path-provisioner-role",
+                            "namespace": "local-path-storage"
+                        },
+                        "rules": [
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "pods"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch",
+                                    "create",
+                                    "patch",
+                                    "update",
+                                    "delete"
+                                ]
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-ffc893e9",
+                        "__initialApiVersion": "rbac.authorization.k8s.io/v1",
+                        "__inputs": {
+                            "apiVersion": "rbac.authorization.k8s.io/v1",
+                            "kind": "Role",
+                            "metadata": {
+                                "name": "local-path-provisioner-role",
+                                "namespace": "local-path-storage"
+                            },
+                            "rules": [
+                                {
+                                    "apiGroups": [
+                                        ""
+                                    ],
+                                    "resources": [
+                                        "pods"
+                                    ],
+                                    "verbs": [
+                                        "get",
+                                        "list",
+                                        "watch",
+                                        "create",
+                                        "patch",
+                                        "update",
+                                        "delete"
+                                    ]
+                                }
+                            ]
+                        },
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "Role",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "rbac.authorization.k8s.io/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:rules": {}
+                                    },
+                                    "manager": "pulumi-kubernetes-ffc893e9",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path-provisioner-role",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2376029",
+                            "uid": "357a1464-8c71-462d-9444-f1d99c0c95bc"
+                        },
+                        "rules": [
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "pods"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch",
+                                    "create",
+                                    "patch",
+                                    "update",
+                                    "delete"
+                                ]
+                            }
+                        ]
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "rules": []
+                    },
+                    "created": "2025-10-04T20:01:11.445069Z",
+                    "modified": "2025-10-04T20:01:11.445069Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/rbac/v1/role.ts#81,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:rbac.authorization.k8s.io/v1:ClusterRole::local-path-provisioner-role",
+                    "custom": true,
+                    "id": "local-path-provisioner-role",
+                    "type": "kubernetes:rbac.authorization.k8s.io/v1:ClusterRole",
+                    "inputs": {
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "ClusterRole",
+                        "metadata": {
+                            "name": "local-path-provisioner-role"
+                        },
+                        "rules": [
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "nodes",
+                                    "persistentvolumeclaims",
+                                    "configmaps",
+                                    "pods",
+                                    "pods/log"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "persistentvolumes"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch",
+                                    "create",
+                                    "patch",
+                                    "update",
+                                    "delete"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "events"
+                                ],
+                                "verbs": [
+                                    "create",
+                                    "patch"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    "storage.k8s.io"
+                                ],
+                                "resources": [
+                                    "storageclasses"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch"
+                                ]
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-80e8279b",
+                        "__initialApiVersion": "rbac.authorization.k8s.io/v1",
+                        "__inputs": {
+                            "apiVersion": "rbac.authorization.k8s.io/v1",
+                            "kind": "ClusterRole",
+                            "metadata": {
+                                "name": "local-path-provisioner-role"
+                            },
+                            "rules": [
+                                {
+                                    "apiGroups": [
+                                        ""
+                                    ],
+                                    "resources": [
+                                        "nodes",
+                                        "persistentvolumeclaims",
+                                        "configmaps",
+                                        "pods",
+                                        "pods/log"
+                                    ],
+                                    "verbs": [
+                                        "get",
+                                        "list",
+                                        "watch"
+                                    ]
+                                },
+                                {
+                                    "apiGroups": [
+                                        ""
+                                    ],
+                                    "resources": [
+                                        "persistentvolumes"
+                                    ],
+                                    "verbs": [
+                                        "get",
+                                        "list",
+                                        "watch",
+                                        "create",
+                                        "patch",
+                                        "update",
+                                        "delete"
+                                    ]
+                                },
+                                {
+                                    "apiGroups": [
+                                        ""
+                                    ],
+                                    "resources": [
+                                        "events"
+                                    ],
+                                    "verbs": [
+                                        "create",
+                                        "patch"
+                                    ]
+                                },
+                                {
+                                    "apiGroups": [
+                                        "storage.k8s.io"
+                                    ],
+                                    "resources": [
+                                        "storageclasses"
+                                    ],
+                                    "verbs": [
+                                        "get",
+                                        "list",
+                                        "watch"
+                                    ]
+                                }
+                            ]
+                        },
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "ClusterRole",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "rbac.authorization.k8s.io/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:rules": {}
+                                    },
+                                    "manager": "pulumi-kubernetes-80e8279b",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path-provisioner-role",
+                            "resourceVersion": "2376021",
+                            "uid": "29b3a7b0-66fc-4051-b34d-c3b4da41c543"
+                        },
+                        "rules": [
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "nodes",
+                                    "persistentvolumeclaims",
+                                    "configmaps",
+                                    "pods",
+                                    "pods/log"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "persistentvolumes"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch",
+                                    "create",
+                                    "patch",
+                                    "update",
+                                    "delete"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    ""
+                                ],
+                                "resources": [
+                                    "events"
+                                ],
+                                "verbs": [
+                                    "create",
+                                    "patch"
+                                ]
+                            },
+                            {
+                                "apiGroups": [
+                                    "storage.k8s.io"
+                                ],
+                                "resources": [
+                                    "storageclasses"
+                                ],
+                                "verbs": [
+                                    "get",
+                                    "list",
+                                    "watch"
+                                ]
+                            }
+                        ]
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "rules": []
+                    },
+                    "created": "2025-10-04T20:01:11.281398Z",
+                    "modified": "2025-10-04T20:01:11.281398Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/rbac/v1/clusterRole.ts#87,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:core/v1:ServiceAccount::local-path-storage/local-path-provisioner-service-account",
+                    "custom": true,
+                    "id": "local-path-storage/local-path-provisioner-service-account",
+                    "type": "kubernetes:core/v1:ServiceAccount",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "kind": "ServiceAccount",
+                        "metadata": {
+                            "name": "local-path-provisioner-service-account",
+                            "namespace": "local-path-storage"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-9a08c137",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "kind": "ServiceAccount",
+                            "metadata": {
+                                "name": "local-path-provisioner-service-account",
+                                "namespace": "local-path-storage"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "kind": "ServiceAccount",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "name": "local-path-provisioner-service-account",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2376036",
+                            "uid": "39571b1e-7d69-471a-b2ac-6cf58c3907ea"
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": []
+                    },
+                    "created": "2025-10-04T20:01:11.511689Z",
+                    "modified": "2025-10-04T20:01:11.511689Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/serviceAccount.ts#91,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:rbac.authorization.k8s.io/v1:ClusterRoleBinding::local-path-provisioner-bind",
+                    "custom": true,
+                    "id": "local-path-provisioner-bind",
+                    "type": "kubernetes:rbac.authorization.k8s.io/v1:ClusterRoleBinding",
+                    "inputs": {
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "ClusterRoleBinding",
+                        "metadata": {
+                            "name": "local-path-provisioner-bind"
+                        },
+                        "roleRef": {
+                            "apiGroup": "rbac.authorization.k8s.io",
+                            "kind": "ClusterRole",
+                            "name": "local-path-provisioner-role"
+                        },
+                        "subjects": [
+                            {
+                                "kind": "ServiceAccount",
+                                "name": "local-path-provisioner-service-account",
+                                "namespace": "local-path-storage"
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-994f41b1",
+                        "__initialApiVersion": "rbac.authorization.k8s.io/v1",
+                        "__inputs": {
+                            "apiVersion": "rbac.authorization.k8s.io/v1",
+                            "kind": "ClusterRoleBinding",
+                            "metadata": {
+                                "name": "local-path-provisioner-bind"
+                            },
+                            "roleRef": {
+                                "apiGroup": "rbac.authorization.k8s.io",
+                                "kind": "ClusterRole",
+                                "name": "local-path-provisioner-role"
+                            },
+                            "subjects": [
+                                {
+                                    "kind": "ServiceAccount",
+                                    "name": "local-path-provisioner-service-account",
+                                    "namespace": "local-path-storage"
+                                }
+                            ]
+                        },
+                        "apiVersion": "rbac.authorization.k8s.io/v1",
+                        "kind": "ClusterRoleBinding",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "rbac.authorization.k8s.io/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:roleRef": {},
+                                        "f:subjects": {}
+                                    },
+                                    "manager": "pulumi-kubernetes-994f41b1",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                }
+                            ],
+                            "name": "local-path-provisioner-bind",
+                            "resourceVersion": "2376023",
+                            "uid": "d30c987b-c696-44c4-b69f-01a747954741"
+                        },
+                        "roleRef": {
+                            "apiGroup": "rbac.authorization.k8s.io",
+                            "kind": "ClusterRole",
+                            "name": "local-path-provisioner-role"
+                        },
+                        "subjects": [
+                            {
+                                "kind": "ServiceAccount",
+                                "name": "local-path-provisioner-service-account",
+                                "namespace": "local-path-storage"
+                            }
+                        ]
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "roleRef": [],
+                        "subjects": []
+                    },
+                    "created": "2025-10-04T20:01:11.281265Z",
+                    "modified": "2025-10-04T20:01:11.281265Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/rbac/v1/clusterRoleBinding.ts#90,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::local-path-storage/local-path-provisioner",
+                    "custom": true,
+                    "id": "local-path-storage/local-path-provisioner",
+                    "type": "kubernetes:apps/v1:Deployment",
+                    "inputs": {
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "name": "local-path-provisioner",
+                            "namespace": "local-path-storage"
+                        },
+                        "spec": {
+                            "replicas": 1,
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "local-path-provisioner"
+                                }
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "local-path-provisioner"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "command": [
+                                                "local-path-provisioner",
+                                                "--debug",
+                                                "start",
+                                                "--config",
+                                                "/etc/config/config.json"
+                                            ],
+                                            "env": [
+                                                {
+                                                    "name": "POD_NAMESPACE",
+                                                    "valueFrom": {
+                                                        "fieldRef": {
+                                                            "fieldPath": "metadata.namespace"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "CONFIG_MOUNT_PATH",
+                                                    "value": "/etc/config/"
+                                                }
+                                            ],
+                                            "image": "rancher/local-path-provisioner:v0.0.32",
+                                            "imagePullPolicy": "IfNotPresent",
+                                            "name": "local-path-provisioner",
+                                            "volumeMounts": [
+                                                {
+                                                    "mountPath": "/etc/config/",
+                                                    "name": "config-volume"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "serviceAccountName": "local-path-provisioner-service-account",
+                                    "volumes": [
+                                        {
+                                            "configMap": {
+                                                "name": "local-path-config"
+                                            },
+                                            "name": "config-volume"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-ecbc6aec",
+                        "__initialApiVersion": "apps/v1",
+                        "__inputs": {
+                            "apiVersion": "apps/v1",
+                            "kind": "Deployment",
+                            "metadata": {
+                                "name": "local-path-provisioner",
+                                "namespace": "local-path-storage"
+                            },
+                            "spec": {
+                                "replicas": 1,
+                                "selector": {
+                                    "matchLabels": {
+                                        "app": "local-path-provisioner"
+                                    }
+                                },
+                                "template": {
+                                    "metadata": {
+                                        "labels": {
+                                            "app": "local-path-provisioner"
+                                        }
+                                    },
+                                    "spec": {
+                                        "containers": [
+                                            {
+                                                "command": [
+                                                    "local-path-provisioner",
+                                                    "--debug",
+                                                    "start",
+                                                    "--config",
+                                                    "/etc/config/config.json"
+                                                ],
+                                                "env": [
+                                                    {
+                                                        "name": "POD_NAMESPACE",
+                                                        "valueFrom": {
+                                                            "fieldRef": {
+                                                                "fieldPath": "metadata.namespace"
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "CONFIG_MOUNT_PATH",
+                                                        "value": "/etc/config/"
+                                                    }
+                                                ],
+                                                "image": "rancher/local-path-provisioner:v0.0.32",
+                                                "imagePullPolicy": "IfNotPresent",
+                                                "name": "local-path-provisioner",
+                                                "volumeMounts": [
+                                                    {
+                                                        "mountPath": "/etc/config/",
+                                                        "name": "config-volume"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "serviceAccountName": "local-path-provisioner-service-account",
+                                        "volumes": [
+                                            {
+                                                "configMap": {
+                                                    "name": "local-path-config"
+                                                },
+                                                "name": "config-volume"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "annotations": {
+                                "deployment.kubernetes.io/revision": "1"
+                            },
+                            "creationTimestamp": "2025-10-04T20:01:11Z",
+                            "generation": 1,
+                            "managedFields": [
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:spec": {
+                                            "f:replicas": {},
+                                            "f:selector": {},
+                                            "f:template": {
+                                                "f:metadata": {
+                                                    "f:labels": {
+                                                        "f:app": {}
+                                                    }
+                                                },
+                                                "f:spec": {
+                                                    "f:containers": {
+                                                        "k:{\"name\":\"local-path-provisioner\"}": {
+                                                            ".": {},
+                                                            "f:command": {},
+                                                            "f:env": {
+                                                                "k:{\"name\":\"CONFIG_MOUNT_PATH\"}": {
+                                                                    ".": {},
+                                                                    "f:name": {},
+                                                                    "f:value": {}
+                                                                },
+                                                                "k:{\"name\":\"POD_NAMESPACE\"}": {
+                                                                    ".": {},
+                                                                    "f:name": {},
+                                                                    "f:valueFrom": {
+                                                                        "f:fieldRef": {}
+                                                                    }
+                                                                }
+                                                            },
+                                                            "f:image": {},
+                                                            "f:imagePullPolicy": {},
+                                                            "f:name": {},
+                                                            "f:volumeMounts": {
+                                                                "k:{\"mountPath\":\"/etc/config/\"}": {
+                                                                    ".": {},
+                                                                    "f:mountPath": {},
+                                                                    "f:name": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "f:serviceAccountName": {},
+                                                    "f:volumes": {
+                                                        "k:{\"name\":\"config-volume\"}": {
+                                                            ".": {},
+                                                            "f:configMap": {
+                                                                "f:name": {}
+                                                            },
+                                                            "f:name": {}
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-ecbc6aec",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:11Z"
+                                },
+                                {
+                                    "apiVersion": "apps/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:metadata": {
+                                            "f:annotations": {
+                                                ".": {},
+                                                "f:deployment.kubernetes.io/revision": {}
+                                            }
+                                        },
+                                        "f:status": {
+                                            "f:availableReplicas": {},
+                                            "f:conditions": {
+                                                ".": {},
+                                                "k:{\"type\":\"Available\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                },
+                                                "k:{\"type\":\"Progressing\"}": {
+                                                    ".": {},
+                                                    "f:lastTransitionTime": {},
+                                                    "f:lastUpdateTime": {},
+                                                    "f:message": {},
+                                                    "f:reason": {},
+                                                    "f:status": {},
+                                                    "f:type": {}
+                                                }
+                                            },
+                                            "f:observedGeneration": {},
+                                            "f:readyReplicas": {},
+                                            "f:replicas": {},
+                                            "f:updatedReplicas": {}
+                                        }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2025-10-04T20:01:15Z"
+                                }
+                            ],
+                            "name": "local-path-provisioner",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2376084",
+                            "uid": "32254b5c-6792-48bc-b4e1-b972c8922ec7"
+                        },
+                        "spec": {
+                            "progressDeadlineSeconds": 600,
+                            "replicas": 1,
+                            "revisionHistoryLimit": 10,
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "local-path-provisioner"
+                                }
+                            },
+                            "strategy": {
+                                "rollingUpdate": {
+                                    "maxSurge": "25%",
+                                    "maxUnavailable": "25%"
+                                },
+                                "type": "RollingUpdate"
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "local-path-provisioner"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "command": [
+                                                "local-path-provisioner",
+                                                "--debug",
+                                                "start",
+                                                "--config",
+                                                "/etc/config/config.json"
+                                            ],
+                                            "env": [
+                                                {
+                                                    "name": "POD_NAMESPACE",
+                                                    "valueFrom": {
+                                                        "fieldRef": {
+                                                            "apiVersion": "v1",
+                                                            "fieldPath": "metadata.namespace"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "CONFIG_MOUNT_PATH",
+                                                    "value": "/etc/config/"
+                                                }
+                                            ],
+                                            "image": "rancher/local-path-provisioner:v0.0.32",
+                                            "imagePullPolicy": "IfNotPresent",
+                                            "name": "local-path-provisioner",
+                                            "resources": {},
+                                            "terminationMessagePath": "/dev/termination-log",
+                                            "terminationMessagePolicy": "File",
+                                            "volumeMounts": [
+                                                {
+                                                    "mountPath": "/etc/config/",
+                                                    "name": "config-volume"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "dnsPolicy": "ClusterFirst",
+                                    "restartPolicy": "Always",
+                                    "schedulerName": "default-scheduler",
+                                    "securityContext": {},
+                                    "serviceAccount": "local-path-provisioner-service-account",
+                                    "serviceAccountName": "local-path-provisioner-service-account",
+                                    "terminationGracePeriodSeconds": 30,
+                                    "volumes": [
+                                        {
+                                            "configMap": {
+                                                "defaultMode": 420,
+                                                "name": "local-path-config"
+                                            },
+                                            "name": "config-volume"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "status": {
+                            "availableReplicas": 1,
+                            "conditions": [
+                                {
+                                    "lastTransitionTime": "2025-10-04T20:01:15Z",
+                                    "lastUpdateTime": "2025-10-04T20:01:15Z",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                                },
+                                {
+                                    "lastTransitionTime": "2025-10-04T20:01:11Z",
+                                    "lastUpdateTime": "2025-10-04T20:01:15Z",
+                                    "message": "ReplicaSet \"local-path-provisioner-866d54d4c8\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                                }
+                            ],
+                            "observedGeneration": 1,
+                            "readyReplicas": 1,
+                            "replicas": 1,
+                            "updatedReplicas": 1
+                        }
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::kubernetes:yaml:ConfigFile::provi",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "spec": []
+                    },
+                    "created": "2025-10-04T20:01:15.357888Z",
+                    "modified": "2025-10-04T20:01:15.357888Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/apps/v1/deployment.ts#188,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:batch/v1:CronJob::backup",
+                    "custom": true,
+                    "id": "local-path-storage/backup",
+                    "type": "kubernetes:batch/v1:CronJob",
+                    "inputs": {
+                        "apiVersion": "batch/v1",
+                        "kind": "CronJob",
+                        "metadata": {
+                            "name": "backup",
+                            "namespace": "local-path-storage"
+                        },
+                        "spec": {
+                            "jobTemplate": {
+                                "spec": {
+                                    "template": {
+                                        "spec": {
+                                            "containers": [
+                                                {
+                                                    "args": [
+                                                        "backup",
+                                                        "/local"
+                                                    ],
+                                                    "env": [
+                                                        {
+                                                            "name": "RESTIC_REPOSITORY",
+                                                            "value": "/nfs/k8s-node-backup"
+                                                        },
+                                                        {
+                                                            "name": "RESTIC_PASSWORD",
+                                                            "value": "password"
+                                                        },
+                                                        {
+                                                            "name": "RESTIC_HOST",
+                                                            "value": "k8s-node-backup"
+                                                        }
+                                                    ],
+                                                    "image": "restic/restic",
+                                                    "name": "restic",
+                                                    "volumeMounts": [
+                                                        {
+                                                            "mountPath": "/local",
+                                                            "name": "local"
+                                                        },
+                                                        {
+                                                            "mountPath": "/nfs",
+                                                            "name": "nfs"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "restartPolicy": "OnFailure",
+                                            "volumes": [
+                                                {
+                                                    "hostPath": {
+                                                        "path": "/opt/local-path-provisioner",
+                                                        "type": "Directory"
+                                                    },
+                                                    "name": "local"
+                                                },
+                                                {
+                                                    "name": "nfs",
+                                                    "nfs": {
+                                                        "path": "/mnt/nfs_share",
+                                                        "server": "192.168.2.38"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "schedule": "0 2 * * *"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-b639e1b4",
+                        "__initialApiVersion": "batch/v1",
+                        "__inputs": {
+                            "apiVersion": "batch/v1",
+                            "kind": "CronJob",
+                            "metadata": {
+                                "name": "backup",
+                                "namespace": "local-path-storage"
+                            },
+                            "spec": {
+                                "jobTemplate": {
+                                    "spec": {
+                                        "template": {
+                                            "spec": {
+                                                "containers": [
+                                                    {
+                                                        "args": [
+                                                            "backup",
+                                                            "/local"
+                                                        ],
+                                                        "env": [
+                                                            {
+                                                                "name": "RESTIC_REPOSITORY",
+                                                                "value": "/nfs/k8s-node-backup"
+                                                            },
+                                                            {
+                                                                "name": "RESTIC_PASSWORD",
+                                                                "value": "password"
+                                                            },
+                                                            {
+                                                                "name": "RESTIC_HOST",
+                                                                "value": "k8s-node-backup"
+                                                            }
+                                                        ],
+                                                        "image": "restic/restic",
+                                                        "name": "restic",
+                                                        "volumeMounts": [
+                                                            {
+                                                                "mountPath": "/local",
+                                                                "name": "local"
+                                                            },
+                                                            {
+                                                                "mountPath": "/nfs",
+                                                                "name": "nfs"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "restartPolicy": "OnFailure",
+                                                "volumes": [
+                                                    {
+                                                        "hostPath": {
+                                                            "path": "/opt/local-path-provisioner",
+                                                            "type": "Directory"
+                                                        },
+                                                        "name": "local"
+                                                    },
+                                                    {
+                                                        "name": "nfs",
+                                                        "nfs": {
+                                                            "path": "/mnt/nfs_share",
+                                                            "server": "192.168.2.38"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "schedule": "0 2 * * *"
+                            }
+                        },
+                        "apiVersion": "batch/v1",
+                        "kind": "CronJob",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:32:36Z",
+                            "generation": 1,
+                            "managedFields": [
+                                {
+                                    "apiVersion": "batch/v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:spec": {
+                                            "f:jobTemplate": {
+                                                "f:spec": {
+                                                    "f:template": {
+                                                        "f:spec": {
+                                                            "f:containers": {
+                                                                "k:{\"name\":\"restic\"}": {
+                                                                    ".": {},
+                                                                    "f:args": {},
+                                                                    "f:env": {
+                                                                        "k:{\"name\":\"RESTIC_HOST\"}": {
+                                                                            ".": {},
+                                                                            "f:name": {},
+                                                                            "f:value": {}
+                                                                        },
+                                                                        "k:{\"name\":\"RESTIC_PASSWORD\"}": {
+                                                                            ".": {},
+                                                                            "f:name": {},
+                                                                            "f:value": {}
+                                                                        },
+                                                                        "k:{\"name\":\"RESTIC_REPOSITORY\"}": {
+                                                                            ".": {},
+                                                                            "f:name": {},
+                                                                            "f:value": {}
+                                                                        }
+                                                                    },
+                                                                    "f:image": {},
+                                                                    "f:name": {},
+                                                                    "f:volumeMounts": {
+                                                                        "k:{\"mountPath\":\"/local\"}": {
+                                                                            ".": {},
+                                                                            "f:mountPath": {},
+                                                                            "f:name": {}
+                                                                        },
+                                                                        "k:{\"mountPath\":\"/nfs\"}": {
+                                                                            ".": {},
+                                                                            "f:mountPath": {},
+                                                                            "f:name": {}
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "f:restartPolicy": {},
+                                                            "f:volumes": {
+                                                                "k:{\"name\":\"local\"}": {
+                                                                    ".": {},
+                                                                    "f:hostPath": {
+                                                                        "f:path": {},
+                                                                        "f:type": {}
+                                                                    },
+                                                                    "f:name": {}
+                                                                },
+                                                                "k:{\"name\":\"nfs\"}": {
+                                                                    ".": {},
+                                                                    "f:name": {},
+                                                                    "f:nfs": {
+                                                                        "f:path": {},
+                                                                        "f:server": {}
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "f:schedule": {}
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-b639e1b4",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:32:36Z"
+                                }
+                            ],
+                            "name": "backup",
+                            "namespace": "local-path-storage",
+                            "resourceVersion": "2379869",
+                            "uid": "84a170ef-08b8-465f-8f37-e3771830c120"
+                        },
+                        "spec": {
+                            "concurrencyPolicy": "Allow",
+                            "failedJobsHistoryLimit": 1,
+                            "jobTemplate": {
+                                "metadata": {},
+                                "spec": {
+                                    "template": {
+                                        "metadata": {},
+                                        "spec": {
+                                            "containers": [
+                                                {
+                                                    "args": [
+                                                        "backup",
+                                                        "/local"
+                                                    ],
+                                                    "env": [
+                                                        {
+                                                            "name": "RESTIC_REPOSITORY",
+                                                            "value": "/nfs/k8s-node-backup"
+                                                        },
+                                                        {
+                                                            "name": "RESTIC_PASSWORD",
+                                                            "value": "password"
+                                                        },
+                                                        {
+                                                            "name": "RESTIC_HOST",
+                                                            "value": "k8s-node-backup"
+                                                        }
+                                                    ],
+                                                    "image": "restic/restic",
+                                                    "imagePullPolicy": "Always",
+                                                    "name": "restic",
+                                                    "resources": {},
+                                                    "terminationMessagePath": "/dev/termination-log",
+                                                    "terminationMessagePolicy": "File",
+                                                    "volumeMounts": [
+                                                        {
+                                                            "mountPath": "/local",
+                                                            "name": "local"
+                                                        },
+                                                        {
+                                                            "mountPath": "/nfs",
+                                                            "name": "nfs"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "dnsPolicy": "ClusterFirst",
+                                            "restartPolicy": "OnFailure",
+                                            "schedulerName": "default-scheduler",
+                                            "securityContext": {},
+                                            "terminationGracePeriodSeconds": 30,
+                                            "volumes": [
+                                                {
+                                                    "hostPath": {
+                                                        "path": "/opt/local-path-provisioner",
+                                                        "type": "Directory"
+                                                    },
+                                                    "name": "local"
+                                                },
+                                                {
+                                                    "name": "nfs",
+                                                    "nfs": {
+                                                        "path": "/mnt/nfs_share",
+                                                        "server": "192.168.2.38"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "schedule": "0 2 * * *",
+                            "successfulJobsHistoryLimit": 3,
+                            "suspend": false
+                        },
+                        "status": {}
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [],
+                        "spec": []
+                    },
+                    "created": "2025-10-04T20:32:36.377748Z",
+                    "modified": "2025-10-04T20:32:36.377748Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/batch/v1/cronJob.ts#87,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:helm.sh/v3:Release::tailscale-operator",
+                    "custom": true,
+                    "id": "tailscale/tailscale-operator-b3c8a77c",
+                    "type": "kubernetes:helm.sh/v3:Release",
+                    "inputs": {
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "tailscale-operator",
+                        "cleanupOnFail": false,
+                        "createNamespace": false,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "tailscale-operator-b3c8a77c",
+                        "namespace": "tailscale",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://pkgs.tailscale.com/helmcharts",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "timeout": 300,
+                        "values": {},
+                        "verify": false,
+                        "version": "1.86.2",
+                        "waitForJobs": false
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:BLIQn4hfbXNFWa7X:TLF4ZNnOHXZqHLn5sdduk/VSFnKPCOjUhDW0QLzQx21MVSFB6ANR9UD2dL4aBfE9qUHZs4GtiBlVDlM/mjYIfWmWht03UT5T+vQYEAIIdOiAd1YlQ+22ULFgeFbSQGqMrLIsvEJ7uzYAdJ2RSetRXm+pvN/XJlUDMiNcYOrT0s9zFpls80Jdl7pO92PAPzSK5BxaJq7yOafW4F/pILbxc2qM7vDJUMVlbn3UZQPZzfDezcS9I1HAWhvJEh7S9sIHSq90VaWHl0x84PI7lvAiNmwx4KQ3SStv5a2YfYuXo0iqfcDr3lTbBrrNVfATs89Vnl9WM/S6AwJDo0LAoWKB+XznWIYG+5FY0WJRG+L/qyo8uiXtgdnE2W7adhki7cDSI+SW3CGIpzlh7N3rSNWI9rSTEZgg76mcBYMUUQJ4T64rJayxxTm8uLwAU0WnXeJIUOTPfqxje4VD388x0kWCTaqXFSA4PMODjDCszEhHELew2oechboPtTQWWT8yX1MTt4pIYrW8LgrZsHtUj2ygsQSW3zQIqirrKkgMfFGFHl3zhBptCZwKqhYIWxpz65b03j+YCli2Lx60t8Q2Al/9OccIZbGw9EpxJj46pYrgGaXZepQIUmeWdT+l0nodHQU6MWNPVrJBIohlTTK0bfNK++u4vCB19sIr4hKCI7a7reQyNZc1ai8fK1YE5dFM0Inv/IzUYw9mtw4MWky1Ac6R/6jMA4xcZ9wR2E+DDoFpSSLdKOM4Ji3ZB67+SqTZZXujmKglPtEiAeKEQvG1pq7ic7gvKMABeQYxFcnExcKz3aTwVvCPIBruTCRr8jLnfrVl3DyjllJAJ5zp41EoaszFZ5eQJLtBczmulbfDeXdE/poiJRQosnfITy3szriqHso4GGbseXP0nnITUoJYutPDmZjUNzru8UZpCPiOWqWbvWiDjgdo2jkg0LiZDJiAQPRe4V7iNfjmA3Jer/tPDKK4df9+aMkad9NA"
+                        },
+                        "allowNullValues": false,
+                        "atomic": false,
+                        "chart": "tailscale-operator",
+                        "cleanupOnFail": false,
+                        "createNamespace": false,
+                        "dependencyUpdate": false,
+                        "description": "",
+                        "devel": false,
+                        "disableCRDHooks": false,
+                        "disableOpenapiValidation": false,
+                        "disableWebhooks": false,
+                        "forceUpdate": false,
+                        "keyring": "",
+                        "lint": false,
+                        "name": "tailscale-operator-b3c8a77c",
+                        "namespace": "tailscale",
+                        "postrender": "",
+                        "recreatePods": false,
+                        "renderSubchartNotes": false,
+                        "replace": false,
+                        "repositoryOpts": {
+                            "caFile": "",
+                            "certFile": "",
+                            "keyFile": "",
+                            "password": "",
+                            "repo": "https://pkgs.tailscale.com/helmcharts",
+                            "username": ""
+                        },
+                        "resetValues": false,
+                        "resourceNames": {
+                            "ClusterRole.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "tailscale-operator"
+                            ],
+                            "ClusterRoleBinding.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "tailscale-operator"
+                            ],
+                            "CustomResourceDefinition.apiextensions.k8s.io/apiextensions.k8s.io/v1": [
+                                "connectors.tailscale.com",
+                                "dnsconfigs.tailscale.com",
+                                "proxyclasses.tailscale.com",
+                                "proxygroups.tailscale.com",
+                                "recorders.tailscale.com"
+                            ],
+                            "Deployment.apps/apps/v1": [
+                                "tailscale/operator"
+                            ],
+                            "IngressClass.networking.k8s.io/networking.k8s.io/v1": [
+                                "tailscale"
+                            ],
+                            "Role.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "tailscale/operator",
+                                "tailscale/proxies"
+                            ],
+                            "RoleBinding.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                                "tailscale/operator",
+                                "tailscale/proxies"
+                            ],
+                            "ServiceAccount/v1": [
+                                "tailscale/operator",
+                                "tailscale/proxies"
+                            ]
+                        },
+                        "reuseValues": false,
+                        "skipAwait": false,
+                        "skipCrds": false,
+                        "status": {
+                            "appVersion": "v1.86.2",
+                            "chart": "tailscale-operator",
+                            "name": "tailscale-operator-b3c8a77c",
+                            "namespace": "tailscale",
+                            "revision": 1,
+                            "status": "deployed",
+                            "version": "1.86.2"
+                        },
+                        "timeout": 300,
+                        "values": {},
+                        "verify": false,
+                        "version": "1.86.2",
+                        "waitForJobs": false
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "dependencies": [
+                        "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                    ],
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::local::79a2792f-47c1-43a7-b5f8-a09dec2c95bb",
+                    "propertyDependencies": {
+                        "chart": [],
+                        "compat": [],
+                        "namespace": [
+                            "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                        ],
+                        "repositoryOpts": [],
+                        "version": []
+                    },
+                    "created": "2025-10-04T20:02:04.240271Z",
+                    "modified": "2025-10-04T20:02:04.240271Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/helm/v3/release.ts#419,9"
+                },
+                {
+                    "urn": "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Secret::operator-oauth-pulumi-name",
+                    "custom": true,
+                    "id": "tailscale/operator-oauth",
+                    "type": "kubernetes:core/v1:Secret",
+                    "inputs": {
+                        "apiVersion": "v1",
+                        "data": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:J0iSPqsViBaKbQLM:jaR/HrCGrJIK3HffqhjmgGGHuwRib4NZKDkH83JwjKKNp886VL5qP8zEgjEYAAZ4dRlaCg4Qp/gSuPUhjaLbB6RrgKWjbgmFn9B6mCFDVMmnVyB5GIikGsDafKqe0fZfOiDp/2ReQoYotEYmgPM3vw//56B3U87NssKVYtAPZY6pm5EHltvOEKbw6701N6JG36c2VLvknLN4FYlx13zlK11GhA=="
+                        },
+                        "kind": "Secret",
+                        "metadata": {
+                            "name": "operator-oauth",
+                            "namespace": "tailscale"
+                        }
+                    },
+                    "outputs": {
+                        "__fieldManager": "pulumi-kubernetes-b8afb412",
+                        "__initialApiVersion": "v1",
+                        "__inputs": {
+                            "apiVersion": "v1",
+                            "data": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:dcivgv9rQ6FdoR4L:Ia902YLA3eYlaDdna/5z35POaNCn6AKVxpXUcJY97rwLLT16/KgKnAtsez+iQtPA1EsRp5adEjufXo83YAxB29dIiLe/KsxDnFrMe2Wrb5qdqA5P+Bx6XCJPYZGcgxZv7kYkCfhqaT9UA9P6HT7DuDf+BwFpGVZ6fTKeSt3U153Xblf8n337E0jK2ipqqljYpSU/DEhunQ+PWclV0LLDUtZWQA=="
+                            },
+                            "kind": "Secret",
+                            "metadata": {
+                                "name": "operator-oauth",
+                                "namespace": "tailscale"
+                            }
+                        },
+                        "apiVersion": "v1",
+                        "data": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:mzhDn9RSU7U4ySQw:hPg1i8BTyZqM6nSvtUDI1MmCoMDSRGyXKb5hRSh1JXrUkJo2rnktq7BaZgWVfKjV6MZ79Yqj2vtTS+f09xNQIRJfdDL08+6gU7PA9nv/eSlZEFIKwnO0ZkhoTNCWKc3jvBppRCjooEVitBdSX022azS797z1AbaLqr143oIVqMgzNas88d9TU9ONdTw33z9n0Ony6gnztmvlhmKTXYOphjyjSw=="
+                        },
+                        "kind": "Secret",
+                        "metadata": {
+                            "creationTimestamp": "2025-10-04T20:01:56Z",
+                            "managedFields": [
+                                {
+                                    "apiVersion": "v1",
+                                    "fieldsType": "FieldsV1",
+                                    "fieldsV1": {
+                                        "f:data": {
+                                            "f:client_id": {},
+                                            "f:client_secret": {}
+                                        }
+                                    },
+                                    "manager": "pulumi-kubernetes-b8afb412",
+                                    "operation": "Apply",
+                                    "time": "2025-10-04T20:01:56Z"
+                                }
+                            ],
+                            "name": "operator-oauth",
+                            "namespace": "tailscale",
+                            "resourceVersion": "2376151",
+                            "uid": "181f8a39-b881-4abb-9aea-326b8796edc9"
+                        },
+                        "type": "Opaque"
+                    },
+                    "parent": "urn:pulumi:prod::myhomelab::pulumi:pulumi:Stack::myhomelab-prod",
+                    "dependencies": [
+                        "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                    ],
+                    "provider": "urn:pulumi:prod::myhomelab::pulumi:providers:kubernetes::default_4_23_0::c74614c5-e1bb-4697-8693-92a5ec6c69a1",
+                    "propertyDependencies": {
+                        "apiVersion": [],
+                        "kind": [],
+                        "metadata": [
+                            "urn:pulumi:prod::myhomelab::kubernetes:core/v1:Namespace::tailscaleNamespace"
+                        ],
+                        "stringData": []
+                    },
+                    "additionalSecretOutputs": [
+                        "data",
+                        "stringData"
+                    ],
+                    "created": "2025-10-04T20:01:56.300906Z",
+                    "modified": "2025-10-04T20:01:56.300906Z",
+                    "sourcePosition": "project:///node_modules/.pnpm/@pulumi+kubernetes@4.23.0_typescript@5.9.2/node_modules/@pulumi/core/v1/secret.ts#109,9"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

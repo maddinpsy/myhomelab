@@ -25,7 +25,8 @@ let network = setupNetwork(k8sProvider);
 setupRick(k8sProvider, network);
 
 let postgres = setupPostgres(k8sProvider);
-newDatabase("cnpg-test", k8sProvider, postgres);
+let ns = new k8s.core.v1.Namespace("cnpg-test", { metadata: { name: "cnpg-test" } }, { provider: k8sProvider });
+newDatabase("cnpg-test", ns, k8sProvider, postgres);
 
 let minio = setupMinio(k8sProvider, network);
 

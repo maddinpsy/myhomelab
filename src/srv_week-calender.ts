@@ -1,9 +1,11 @@
 import * as k8s from "@pulumi/kubernetes";
 import * as pulumi from "@pulumi/pulumi";
+import { newDatabase } from "./postgres";
 
 function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
 
     const ns = new k8s.core.v1.Namespace("photo-week-calender", { metadata: { name: "photo-week-calender" } }, { provider: k8sProvider });
+    const postgresCluster = newDatabase("photo-week-calendar-db", ns, k8sProvider, dependsOn);
     const dpl = new k8s.apps.v1.Deployment("photo-week-calender-deployment", {
         metadata: {
             namespace: ns.metadata.name,
@@ -32,7 +34,17 @@ function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.Resour
                             env: [
                                 {
                                     name: "ORIGIN",
-                                    value: "http://default-photo-week-calender-service"
+                                    value: "http://photo-week-calender-photo-week-calender-service"
+                                },
+                                {
+                                    name: "DATABASE_URL",
+                                    valueFrom: {
+                                        secretKeyRef: {
+                                            // The name of the secret is the name of the helm release plus -app
+                                            name: postgresCluster.name.apply(name => `${name}-app`),
+                                            key: "uri"
+                                        }
+                                    }
                                 }
                             ]
                         }

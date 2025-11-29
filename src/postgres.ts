@@ -14,14 +14,14 @@ export function setupPostgres(k8sProvider?: k8s.Provider) {
     return cnpg;
 }
 
-export function newDatabase(namespace: string, k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
-    const cluster = new k8s.helm.v3.Release("cluster", {
+export function newDatabase(name: string, namespace: k8s.core.v1.Namespace, k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
+    const cluster = new k8s.helm.v3.Release(`${name}-cluster`, {
         chart: "cluster",
         repositoryOpts: {
             repo: "https://cloudnative-pg.github.io/charts/"
         },
-        namespace: namespace,
-        createNamespace: true,
+        namespace: namespace.metadata.name,
+        createNamespace: false,
         version: "0.3.1",
         values: {
             cluster: {

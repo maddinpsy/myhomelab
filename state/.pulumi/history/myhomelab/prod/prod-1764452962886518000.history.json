@@ -1,0 +1,56 @@
+{
+    "kind": "update",
+    "startTime": 1764452948,
+    "message": "add registry",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "Martin Markmann",
+        "git.author.email": "martin.markmann@altow.de",
+        "git.committer": "Martin Markmann",
+        "git.committer.email": "martin.markmann@altow.de",
+        "git.dirty": "true",
+        "git.head": "d361f0291d5ed07b85afa9b9e9cede3a248337c8",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "arm64",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "darwin",
+        "pulumi.version": "v3.193.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "maddinpsy",
+        "vcs.repo": "myhomelab",
+        "vcs.root": "."
+    },
+    "config": {
+        "myhomelab:backupPassword": {
+            "secure": "v1:dWlRLGpVLzezvP/l:+XUCBDx7koQokwyMyhi+sabEnK41bLNZ"
+        },
+        "myhomelab:kubeconfig": {
+            "secure": "v1:xHgxRu9kKFSijk9S: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"
+        },
+        "myhomelab:nfsPath": "/mnt/nfs_share/k8s-node-backup",
+        "myhomelab:nfsServer": "192.168.2.38",
+        "myhomelab:tailscaleClientId": {
+            "secure": "v1:0nrlteTdNUReTchr:q7yJsJO/QgEXBEoZaHIQXL2wopHSxsvU/J9QM+H1Wbd0"
+        },
+        "myhomelab:tailscaleClientSecret": {
+            "secure": "v1:PQmRgO4GnXyuZAA2:yQwTKG7Xp5GWCgD0tyvolRP/VV9z0+Z1SMnlksGMgr6g9xxP/t+wqmdE6x/S/MqmvJZ6ClZgHl4COgemE86QawZ14DztC2bQXImxXApKviA="
+        },
+        "myhomelab:talosconfig": {
+            "secure": "v1:TDZkiuCgoxysXl/a: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"
+        },
+        "pulumi:tags": {
+            "pulumi:template": "typescript"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1764452962,
+    "resourceChanges": {
+        "replace": 1,
+        "same": 21,
+        "update": 2
+    }
+}
