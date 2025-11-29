@@ -6,6 +6,7 @@ import setupRick from "./srv_rick";
 import { setupPostgres, newDatabase } from "./postgres";
 import { setupMinio } from "./minio";
 import { createRegistry } from "./registry";
+import setupWeekCalender from "./srv_week-calender";
 
 const cfg = new pulumi.Config();
 
@@ -29,3 +30,5 @@ newDatabase("cnpg-test", k8sProvider, postgres);
 let minio = setupMinio(k8sProvider, network);
 
 let registry = createRegistry(k8sProvider);
+
+let weekCalender = setupWeekCalender(k8sProvider, [network, registry.deployment, postgres]);
