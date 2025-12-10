@@ -27,7 +27,7 @@ function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.Resour
                     containers: [
                         {
                             name: "photo-week-calender",
-                            image: "registry.local/photo-week-calendar:0.0.4",
+                            image: "registry.local/photo-week-calendar:0.1.1",
                             ports: [
                                 { containerPort: 3000 }
                             ],
@@ -35,6 +35,10 @@ function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.Resour
                                 {
                                     name: "ORIGIN",
                                     value: "http://photo-week-calender-photo-week-calender-service"
+                                },
+                                {
+                                    name: "BODY_SIZE_LIMIT",
+                                    value: "20M"
                                 },
                                 {
                                     name: "DATABASE_URL",
