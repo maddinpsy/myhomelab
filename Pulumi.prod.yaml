@@ -12,3 +12,7 @@ config:
     secure: v1:dWlRLGpVLzezvP/l:+XUCBDx7koQokwyMyhi+sabEnK41bLNZ
   myhomelab:nfsServer: 192.168.2.38
   myhomelab:nfsPath: /mnt/nfs_share/k8s-node-backup
+  myhomelab:basicAuthUsername:
+    secure: v1:FpnuaGhRGX7DA9yb:vREYm64t6hp5YJ1qvXauvzEm9PM=
+  myhomelab:basicAuthPassword:
+    secure: v1:j74OFzBT5Xh65Oc3:8Bh+Mz9PTthh2ZVHBtPCtZbu4NJz8V7amrflpA==

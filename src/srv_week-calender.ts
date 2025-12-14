@@ -4,12 +4,21 @@ import { newDatabase } from "./postgres";
 import { setupMinio, createMinioBucket } from "./minio";
 
 function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.ResourceOptions["dependsOn"]) {
+    const cfg = new pulumi.Config();
 
     const ns = new k8s.core.v1.Namespace("photo-week-calender", { metadata: { name: "photo-week-calender" } }, { provider: k8sProvider });
     const postgresCluster = newDatabase("photo-week-calendar-db", ns, k8sProvider, dependsOn);
     const minio = setupMinio("photo-week-calender-minio", ns, k8sProvider, dependsOn);
     const bucketName = "photo-week-calender-bucket";
     createMinioBucket(bucketName, minio, ns, true, k8sProvider);
+    const basicAuthUsername = cfg.requireSecret("basicAuthUsername");
+    const basicAuthPassword = cfg.requireSecret("basicAuthPassword");
+    const BasicAuthUsers = pulumi.all([basicAuthUsername, basicAuthPassword]).apply(([username, password]) => JSON.stringify([
+        {
+            username: username,
+            password: password
+        }
+    ]));
 
     const dpl = new k8s.apps.v1.Deployment("photo-week-calender-deployment", {
         metadata: {
@@ -32,7 +41,7 @@ function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.Resour
                     containers: [
                         {
                             name: "photo-week-calender",
-                            image: "registry.local/photo-week-calendar:0.2.3",
+                            image: "registry.local/photo-week-calendar:0.2.4",
                             ports: [
                                 { containerPort: 3000 }
                             ],
@@ -90,7 +99,11 @@ function setupWeekCalender(k8sProvider?: k8s.Provider, dependsOn?: pulumi.Resour
                                     name: "S3_FORCE_PATH_STYLE",
                                     value: "true"
                                 },
-                            ]
+                                {
+                                    name: "USERS",
+                                    value: BasicAuthUsers
+                                }
+                            ] // end of env
                         }
                     ]
                 }
