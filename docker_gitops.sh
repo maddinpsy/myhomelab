@@ -8,6 +8,8 @@ then
     git pull origin dockerexec 
     echo restarting script...
     ./$0
+else
+    echo no changes detected
 fi
 
 # check corn job already exists or add it
