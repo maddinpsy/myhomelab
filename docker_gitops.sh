@@ -3,6 +3,7 @@
 # pull current repo 
 git fetch
 
+
 # check corn job already exists or add it
 (crontab -l | grep -q 'docker_gitops.sh') || (crontab -l ; echo "*/5 * * * * /bin/bash $(pwd)/docker_gitops.sh >> $(pwd)/docker_gitops.log 2>&1") | crontab -
 
