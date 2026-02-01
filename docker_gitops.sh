@@ -1,18 +1,5 @@
 #!/bin/bash
 
-# pull current repo 
-echo checking for updates...
-git fetch
-if ! git diff origin/docker docker --exit-code 
-then
-    echo changes detected, updating...
-    git pull origin dockerexec 
-    echo restarting script...
-    ./$0
-else
-    echo no changes detected
-fi
-
 # check corn job already exists or add it
 (crontab -l | grep -q 'docker_gitops.sh') || (crontab -l ; echo "*/5 * * * * /bin/bash $(pwd)/docker_gitops.sh >> $(pwd)/docker_gitops.log 2>&1") | crontab -
 
@@ -34,3 +21,6 @@ sudo tailscale up
 
 # run docker compose
 docker compose -f docker-compose.yml up -d --remove-orphans
+
+# update repo for next run
+git pull
