@@ -3,7 +3,6 @@
 # pull current repo 
 echo checking for updates...
 git fetch
-echo current commit: $(git rev-parse HEAD)
 if ! git diff origin/docker docker --exit-code 
 then
     echo changes detected, updating...
