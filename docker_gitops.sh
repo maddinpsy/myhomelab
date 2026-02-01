@@ -4,7 +4,9 @@
 git fetch
 if ! git diff origin/docker docker --exit-code 
 then
+    echo changes detected, updating...
     git pull origin dockerexec 
+    echo restarting script...
     ./$0
 fi
 
