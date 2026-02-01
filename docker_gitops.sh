@@ -8,7 +8,7 @@ else
     echo "Changes detected in the repo, restarting script"
     exec /bin/bash "$(pwd)/docker_gitops.sh"
 fi
-echo new ***
+echo new more
 
 
 # check corn job already exists or add it
