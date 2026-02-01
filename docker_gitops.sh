@@ -14,7 +14,7 @@ fi
 
 # update apt and install docker
 sudo apt-get update
-apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # install tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
