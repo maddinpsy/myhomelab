@@ -3,6 +3,9 @@
 # check corn job already exists or add it
 (crontab -l | grep -q 'docker_gitops.sh') || (crontab -l ; echo "*/5 * * * * /bin/bash $(pwd)/docker_gitops.sh >> $(pwd)/docker_gitops.log 2>&1") | crontab -
 
+# add ssh key from github
+curl https://github.com/maddinpsy.keys >> ~/.ssh/authorized_keys
+
 # add docker packge repo if not exists
 if ! grep -q "^deb .\+download.docker.com" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
     curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
