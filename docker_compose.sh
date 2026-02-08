@@ -32,5 +32,7 @@ for f in secrets/*; do
 done
 
 # run docker swarm
-sudo docker swarm init
-sudo docker stack deploy -c docker-compose.yml myhomelab
+if ! sudo docker node ls; then
+  sudo docker swarm init
+  sudo docker stack deploy -c docker-compose.yml myhomelab
+fi
