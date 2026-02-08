@@ -26,5 +26,5 @@ for f in secrets/*; do
 done
 
 # run docker swarm
-docker swarm init
-docker stack deploy -c docker-compose.yml myhomelab
+sudo docker swarm init
+sudo docker stack deploy -c docker-compose.yml myhomelab
