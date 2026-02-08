@@ -8,14 +8,18 @@ if ! grep -q "^deb .\+download.docker.com" /etc/apt/sources.list /etc/apt/source
 fi
 
 # update apt and install docker
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+if ! [ -x "$(command -v docker)" ]; then
+  sudo apt-get update
+  sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+fi
 
 # install sops
-curl -LO https://github.com/getsops/sops/releases/download/v3.11.0/sops-v3.11.0.linux.arm64
-sudo mv sops-v3.11.0.linux.arm64 /usr/local/bin/sops
-sudo chmod +x /usr/local/bin/sops
-sudo apt install -y jq
+if ! [ -x "$(command -v sops)" ]; then
+  curl -LO https://github.com/getsops/sops/releases/download/v3.11.0/sops-v3.11.0.linux.arm64
+  sudo mv sops-v3.11.0.linux.arm64 /usr/local/bin/sops
+  sudo chmod +x /usr/local/bin/sops
+  sudo apt install -y jq
+fi
 
 # decrypt secrets
 # cerate with SOPS_AGE_RECIPIENTS="$(cat ~/.ssh/id_ed25519.pub)" sops encrypt -i sec.json
