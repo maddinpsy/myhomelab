@@ -1,0 +1,12 @@
+version: "3.9"
+
+secrets:
+  cloudflared_token:
+    external: true
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel run --credentials-file /run/secrets/cloudflared
+    secrets:
+      - cloudflared_token
