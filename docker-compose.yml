@@ -11,11 +11,12 @@ services:
     secrets:
       - cloudflared_token
 
-  nginx:
-    image: nginx:latest
+  caddy:
+    image: caddy:latest
     ports:
-      - 80:80
+      - 80:80/tcp
+      - 443:443/tcp
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./CADDYFILE:/etc/caddy/CADDYFILE
     depends_on:
       - cloudflared
