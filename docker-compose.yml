@@ -7,6 +7,6 @@ secrets:
 services:
   cloudflared:
     image: cloudflare/cloudflared:latest
-    command: tunnel run --credentials-file /run/secrets/cloudflared
+    command: tunnel run --token-file /run/secrets/cloudflared
     secrets:
       - cloudflared_token
