@@ -22,7 +22,7 @@ sudo apt install -y jq
 # assumes ~/.ssh/id_ed25519 is there and can decrypt the file
 for f in secrets/*; do
   name="$(basename "$f")"
-  if ![docker secret ls | grep "$name"]; then
+  if ! docker secret ls | grep -q "$name"; then
     sops -d "$f" | sudo docker secret create "$name" -
   fi
 done
