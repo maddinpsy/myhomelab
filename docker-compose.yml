@@ -17,6 +17,6 @@ services:
       - 80:80/tcp
       - 443:443/tcp
     volumes:
-      - ./CADDYFILE:/etc/caddy/CADDYFILE
+      - ./Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - cloudflared
